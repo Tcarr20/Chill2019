@@ -15,3 +15,11 @@ var pm = matrix_build_projection_ortho(ideal_w, ideal_h, 1, 10000);
 camera_set_view_mat(camera, vm);
 camera_set_proj_mat(camera, pm);
 view_camera[0] = camera;
+
+
+//audio
+if room = rmTest
+if(!audio_is_playing(Kneels_Boar))
+{
+	audio_play_sound(Kneels_Boar, 1, true);
+}

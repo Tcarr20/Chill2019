@@ -800,6 +800,22 @@
             }
         },
         {
+            "Key": "5ac75d63-cb34-468e-a734-6401d5f64937",
+            "Value": {
+                "id": "de02141d-dd38-4d49-89d9-8a3ee0a996d5",
+                "resourcePath": "sounds\\Vamp_Shoot\\Vamp_Shoot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "5c22a8f0-0953-4f70-809c-55357896a2a9",
+            "Value": {
+                "id": "cc1830b8-5f4a-4150-a5ed-f332607f6f96",
+                "resourcePath": "sounds\\Jack_Hurt\\Jack_Hurt.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5cf908eb-34d8-465e-ba43-fce43fbc52ff",
             "Value": {
                 "id": "788d400f-b036-4852-a3f9-89f5ac5efa8d",
@@ -1072,6 +1088,22 @@
             }
         },
         {
+            "Key": "74800cf1-225d-4783-a841-dd29cdc4eff6",
+            "Value": {
+                "id": "3c18ecdd-b7de-4024-bb81-f28224f6a44a",
+                "resourcePath": "sounds\\Kneels_Boar\\Kneels_Boar.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "7482507b-fa53-4400-9a15-b36afa25853b",
+            "Value": {
+                "id": "91b45577-f101-44b2-b7c1-6b2d9672e69a",
+                "resourcePath": "sounds\\Vamp_Hurt\\Vamp_Hurt.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "74d169c2-9633-4207-ae6b-f83b4195ba32",
             "Value": {
                 "id": "cd1f874a-173b-4534-87ea-4ce087e2892f",
@@ -1213,6 +1245,14 @@
                 "id": "ab2cf896-8890-4cd8-afdf-c2d2b38cd719",
                 "resourcePath": "scripts\\opmenu_cursor_cancel\\opmenu_cursor_cancel.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "83b30408-0c78-42dd-8427-975e92a11927",
+            "Value": {
+                "id": "17059b7e-cc4e-49c4-bada-28aa47b4d285",
+                "resourcePath": "sounds\\Wolf_Hurt\\Wolf_Hurt.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -16,5 +16,19 @@ if (other.myDamage > 0 && hitStun == 0) {
 		var _angle = point_direction(other.x, other.y, x, y);
 		vx = lengthdir_x(moveSpeed / 3, _angle);
 		vy = lengthdir_y(moveSpeed / 3, _angle);
+		
+		if (PlayerClass.Jack)
+		{
+			audio_play_sound(Jack_Hurt, 1, false);
+		}
+		else if(PlayerClass.Vamp)
+		{
+			audio_play_sound(Vamp_Hurt, 1, false);
+		}
+		else if(PlayerClass.Wolf)
+		{
+			audio_play_sound(Wolf_Hurt, 1, false);
+		}
+		
 	}
 }
