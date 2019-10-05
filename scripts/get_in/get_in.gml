@@ -71,96 +71,96 @@ switch(c)
     case in_up:
 		var _axis_check = gp_get_axis(in_up, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_u) {return false;}
+			if (global.c_axisl_u[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_u;}
+			if (_axis_check) {return global.c_axisl_u[p];}
 			else {return false;}
 		}
     break;
     case in_down:
 		var _axis_check = gp_get_axis(in_down, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_d) {return false;}
+			if (global.c_axisl_d[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_d;}
+			if (_axis_check) {return global.c_axisl_d[p];}
 			else {return false;}
 		}
     break;
     case in_left:
 		var _axis_check = gp_get_axis(in_left, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_l) {return false;}
+			if (global.c_axisl_l[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_l;}
+			if (_axis_check) {return global.c_axisl_l[p];}
 			else {return false;}
 		}
     break;
     case in_right:
 		var _axis_check = gp_get_axis(in_right, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_r) {return false;}
+			if (global.c_axisl_r[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_r;}
+			if (_axis_check) {return global.c_axisl_r[p];}
 			else {return false;}
 		}
     break;
 	case in_up_right:
 		var _axis_check = gp_get_axis(in_up_right, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_ur) {return false;}
+			if (global.c_axisl_ur[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_ur;}
+			if (_axis_check) {return global.c_axisl_ur[p];}
 			else {return false;}
 		}
     break;
 	case in_up_left:
 		var _axis_check = gp_get_axis(in_up_left, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_ul) {return false;}
+			if (global.c_axisl_ul[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_ul;}
+			if (_axis_check) {return global.c_axisl_ul[p];}
 			else {return false;}
 		}
     break;
 	case in_down_left:
 		var _axis_check = gp_get_axis(in_down_left, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_dl) {return false;}
+			if (global.c_axisl_dl[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_dl;}
+			if (_axis_check) {return global.c_axisl_dl[p];}
 			else {return false;}
 		}
     break;
 	case in_down_right:
 		var _axis_check = gp_get_axis(in_down_right, global.gp_slot[p], p);
 		if (d==in_check_press) {
-			if (global.c_axisl_dr) {return false;}
+			if (global.c_axisl_dr[p]) {return false;}
 			else {return _axis_check;}
 		}
         else if (d==in_check_hold) {return _axis_check;}
         else if (d==in_check_release) {
-			if (_axis_check) {return global.c_axisl_dr;}
+			if (_axis_check) {return global.c_axisl_dr[p];}
 			else {return false;}
 		}
     break;

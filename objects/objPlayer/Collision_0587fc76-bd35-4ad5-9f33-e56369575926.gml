@@ -3,22 +3,13 @@ if (other.myDamage > 0 && hitStun == 0) {
 	if (attackInstance != noone) { instance_destroy(attackInstance); }
 	myHealth -= other.myDamage;
 	//Death
-	if (myHealth <= 0) {
-		myHealth = 0;
-		show_message("Oopsie Woopsie Fucky Wucky");
-		game_restart();
-	}
+	if (myHealth <= 0) { event_perform(ev_other, ev_user0); }
 	//Knockback
 	else {
 		//Set sprite
 		myState = PlayerState.Hurt;
 		hitStun = hitStunTime;
-		switch(myFace) {
-			case Face.Right: sprite_index = sprPlayerHurtR; break;
-			case Face.Left: sprite_index = sprPlayerHurtL; break;
-			case Face.Up: sprite_index = sprPlayerHurtU; break;
-			case Face.Down: sprite_index = sprPlayerHurtD; break;
-		}
+		sprite_index = hurtSprites[myFace];
 		image_speed = 0;
 		
 		//Set motion

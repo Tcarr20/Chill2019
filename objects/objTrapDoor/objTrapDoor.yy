@@ -4,7 +4,46 @@
     "mvc": "1.0",
     "name": "objTrapDoor",
     "eventList": [
-        
+        {
+            "id": "3d5f794c-ce75-4594-8b8b-51b44190517b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "51c62adf-7552-48ba-b3c6-5bcee5b50721"
+        },
+        {
+            "id": "672714c5-4d77-455a-a2c5-2bcc74dc5d36",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "51c62adf-7552-48ba-b3c6-5bcee5b50721"
+        },
+        {
+            "id": "aad81ee1-61a5-498b-8bcb-a8180e01cf0d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 11,
+            "eventtype": 7,
+            "m_owner": "51c62adf-7552-48ba-b3c6-5bcee5b50721"
+        },
+        {
+            "id": "f596f062-9f20-4aa8-9933-a3310c961a9e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "51c62adf-7552-48ba-b3c6-5bcee5b50721"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

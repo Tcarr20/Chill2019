@@ -3,6 +3,23 @@ if (hitStun > 0) { hitStun--; }
 if (myState == PlayerState.Hurt) {
 	if (hitStun < hitStunFreeze) { myState = PlayerState.Idle; }
 }
+else if (myState == PlayerState.Fall) {
+	image_xscale -= 0.025;
+	image_yscale -= 0.025;
+	if (image_xscale <= 0) {
+		//Respawn & take damage
+		image_xscale = 1;
+		image_yscale = 1;
+		x = respawnPos[X];
+		y = respawnPos[Y];
+		myHealth -= 1;
+		if (myHealth <= 0) { event_perform(ev_other, ev_user0); }
+		else {
+			myState = PlayerState.Idle;
+			hitStun = hitStunTime; 
+		}
+	}
+}
 else if (myState != PlayerState.Hold) {
 	//Poll attack input
 	if (get_in(in_x, in_check_press, myID)) {
@@ -13,6 +30,7 @@ else if (myState != PlayerState.Hold) {
 				attackComboLevel = 1;
 				myState = PlayerState.Attack1;
 				image_speed = attackImageSpeed;
+				image_index = 0;
 				attackInstance = instance_create_v(x, y, layer, objAttackSlash, self, myFace, attackImageSpeed);
 			}
 			//Buffer attack otherwise
@@ -81,30 +99,15 @@ else if (myState != PlayerState.Hold) {
 	
 	//Handle animation based on direction & state
 	if (myState == PlayerState.Attack1 || myState == PlayerState.Attack2) {
-		switch(myFace) {
-			case Face.Right: sprite_index = sprPlayerAttackR; break;
-			case Face.Left: sprite_index = sprPlayerAttackL; break;
-			case Face.Up: sprite_index = sprPlayerAttackU; break;
-			case Face.Down: sprite_index = sprPlayerAttackD; break;
-		}
+		sprite_index = attackSprites[myFace];
 		image_speed = attackImageSpeed;
 	}
 	else if (myState == PlayerState.Idle) {
-		switch(myFace) {
-			case Face.Right: sprite_index = sprPlayerIdleR; break;
-			case Face.Left: sprite_index = sprPlayerIdleL; break;
-			case Face.Up: sprite_index = sprPlayerIdleU; break;
-			case Face.Down: sprite_index = sprPlayerIdleD; break;
-		}
+		sprite_index = idleSprites[myFace];
 		image_speed = idleImageSpeed;
 	}
 	else if (myState == PlayerState.Move) {
-		switch(myFace) {
-			case Face.Right: sprite_index = sprPlayerIdleR; break;
-			case Face.Left: sprite_index = sprPlayerIdleL; break;
-			case Face.Up: sprite_index = sprPlayerIdleU; break;
-			case Face.Down: sprite_index = sprPlayerIdleD; break;
-		}
+		sprite_index = moveSprites[myFace];
 		image_speed = walkImageSpeed;
 	}
 }

@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "objArrowTowerLR",
     "eventList": [
-        
+        {
+            "id": "ab79729b-af23-4db8-811a-e7187eaf7060",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "55d16ab2-0830-4238-8479-203c3ce23b87"
+        },
+        {
+            "id": "9f3ca53a-679f-4076-a3fa-15345caee5d5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "55d16ab2-0830-4238-8479-203c3ce23b87"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
