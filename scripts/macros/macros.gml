@@ -101,7 +101,7 @@ enum Face {
 };
 enum PlayerState {
 	None, 
-	Idle, Hold, Move, Hurt, Fall, Attack1, Attack2, Attack3,
+	Idle, Hold, Move, Hurt, Fall, Attack,
 	Total
 };
 enum PlayerClass {

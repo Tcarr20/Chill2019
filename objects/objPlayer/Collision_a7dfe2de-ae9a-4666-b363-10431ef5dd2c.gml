@@ -1,12 +1,13 @@
 ///@description Falling in pits
 if (other.image_index > 0 && myState != PlayerState.Fall) {
 	//Get distance to center
-	var _dist = point_to_point(x, y, other.x + 32, other.y + 32);
-	var _angle = point_direction(other.x + 16, other.y + 16, x, y);
+	var _angle = point_direction(other.x + 32, other.y + 32, x, y);
+	var _dx = abs((other.x + 32) - x);
+	var _dy = abs((other.y + 32) - y);
 	//Fall in pit
-	if (_dist < 24) {
+	if (_dx < 24 && _dy < 24) {
 		//Set respawn position
-		respawnPos = [other.x + 32 + lengthdir_x(96, _angle), other.y + 32 + lengthdir_y(96, _angle)];
+		respawnPos = [other.x + 32 + lengthdir_x(90, _angle), other.y + 32 + lengthdir_y(90, _angle)];
 		//Snap to pit center
 		vx = 0;
 		vy = 0;
