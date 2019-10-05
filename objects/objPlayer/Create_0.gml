@@ -4,7 +4,7 @@ myID = 0;
 myMove = Face.Down;
 myFace = Face.Down;
 myState = PlayerState.Idle;
-myClass = PlayerClass.Jack;
+myClass = PlayerClass.Vamp;
 
 //Health & Damage
 myHealth = 6;
@@ -58,6 +58,18 @@ headHurtSprites = array_create(8, -1);
 if (myClass == PlayerClass.Jack) {
 	headIdleSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
 	headMoveSprites = [sprJackMoveR, -1, sprJackMoveU, -1, sprJackMoveL, -1, sprJackMoveD, -1];
+	//headAttackSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
+	//headHurtSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
+}
+else if (myClass == PlayerClass.Vamp) {
+	headIdleSprites = [sprVampIdleR, -1, sprVampIdleU, -1, sprVampIdleL, -1, sprVampIdleD, -1];
+	headMoveSprites = [sprVampMoveR, -1, sprVampMoveU, -1, sprVampMoveL, -1, sprVampMoveD, -1];
+	//headAttackSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
+	//headHurtSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
+}
+else if (myClass == PlayerClass.Wolf) {
+	headIdleSprites = [sprWolfIdleR, -1, sprWolfIdleU, -1, sprWolfIdleL, -1, sprWolfIdleD, -1];
+	headMoveSprites = [sprWolfMoveR, -1, sprWolfMoveU, -1, sprWolfMoveL, -1, sprWolfMoveD, -1];
 	//headAttackSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
 	//headHurtSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
 }
