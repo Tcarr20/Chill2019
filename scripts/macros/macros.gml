@@ -9,6 +9,8 @@ gml_pragma("global", "macros()");
 #macro mask_width sprite_get_width(mask_index)
 #macro mask_height sprite_get_width(mask_index)
 #macro NUM_PLAYERS 1
+#macro RT2 1.4142
+#macro INV_RT2 0.7071
 
 #macro NUM_TIMELINES 4
 #macro NUM_PATHS 4
@@ -31,7 +33,7 @@ gml_pragma("global", "macros()");
 #macro gp_axisl_d 106
 #macro gp_axisl_ur 107
 #macro gp_any 108
-#macro gp_axis_sector_angle 45
+#macro gp_axis_sector_angle 55
 #macro gp_axis_pre_rotation 0
 #macro in_check_press 300
 #macro in_check_hold 301
@@ -99,6 +101,11 @@ enum Face {
 };
 enum PlayerState {
 	None, 
-	Idle, Hold, Move,
+	Idle, Hold, Move, Hurt, Attack1, Attack2, Attack3,
+	Total
+};
+enum PlayerClass {
+	None,
+	Jack, Vamp, Wolf,
 	Total
 };

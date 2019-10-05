@@ -6,8 +6,6 @@ vxNew = round(cx);
 vyNew = round(cy);
 cx -= vxNew;
 cy -= vyNew;
-//var _coll_x = x + (faceOffsetX[faceDir]*shadowRadius);
-//var _coll_y = y + (faceOffsetY[faceDir]*shadowRadius);
 var _coll_x = x, _coll_y = y;
 if (vxNew < 0) { _coll_x = bbox_left; }
 else if (vxNew > 0) { _coll_x = bbox_right; }
@@ -60,3 +58,6 @@ for(var i=abs(vxNew); i>0; i--) {
 		}
 	}
 }
+
+//Update depth
+if (y >= 0 && y < room_height) { depth_set(); }

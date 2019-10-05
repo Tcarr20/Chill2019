@@ -1,6 +1,10 @@
 ///@description Update camera gamepads
 //Update camera position
 if (x != xprevious || y != yprevious) {
+	//Clamp position to room bounds
+	x = clamp(x, (ideal_w/2), room_width-(ideal_w/2));
+	y = clamp(y, (ideal_h/2), room_height-(ideal_h/2));
+	//Update camera position
 	camera = view_get_camera(0);
 	var vm = matrix_build_lookat(x, y, -1000, x, y, 0, 0, 1, 0);
 	camera_set_view_mat(camera, vm);

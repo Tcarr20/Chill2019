@@ -48,8 +48,9 @@ global.depthGrid = 0;
 
 //////Camera Setup
 //Resolution setup
-ideal_w=0;
-ideal_h=360;
+ideal_w=768;
+ideal_h=768;
+/*
 screen_w=display_get_width();
 screen_h=display_get_height();
 //Get screen ratio
@@ -67,7 +68,7 @@ if(screen_h mod ideal_h !=0) {
 }
 //Check for odd values
 if(ideal_w & 1) {ideal_w++;}
-if(ideal_h & 1) {ideal_h++;}
+if(ideal_h & 1) {ideal_h++;}*/
 //Set window sizes
 surface_resize(application_surface, ideal_w, ideal_h);
 display_set_gui_size(ideal_w, ideal_h);
