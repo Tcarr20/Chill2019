@@ -1,8 +1,8 @@
 {
-    "id": "6c14943c-abaa-49e4-9724-525282c6ea97",
+    "id": "51c62adf-7552-48ba-b3c6-5bcee5b50721",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objSolid",
+    "name": "objTrapDoor",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a75fe33f-3d03-4f09-92de-0bd8aa4a672c",
-    "visible": false
+    "spriteId": "578de2f2-0dcd-422c-91ff-8f9b50f1428b",
+    "visible": true
 }

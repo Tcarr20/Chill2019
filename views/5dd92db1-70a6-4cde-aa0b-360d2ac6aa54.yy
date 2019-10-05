@@ -7,7 +7,8 @@
         "2fe0793c-aa95-4220-9d6a-34fa21728a92",
         "7aa0a020-45e6-4100-aa0f-9a4b8f300f95",
         "55d16ab2-0830-4238-8479-203c3ce23b87",
-        "4e9b4d8c-ee7f-4da0-b8d0-bf8f2797d361"
+        "4e9b4d8c-ee7f-4da0-b8d0-bf8f2797d361",
+        "51c62adf-7552-48ba-b3c6-5bcee5b50721"
     ],
     "filterType": "GMObject",
     "folderName": "Traps",

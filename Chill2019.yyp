@@ -568,6 +568,14 @@
             }
         },
         {
+            "Key": "51c62adf-7552-48ba-b3c6-5bcee5b50721",
+            "Value": {
+                "id": "626b092a-28de-4361-9be8-8a2350d2d4c9",
+                "resourcePath": "objects\\objTrapDoor\\objTrapDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5295f820-842e-497a-abc0-17b9c4f4dda7",
             "Value": {
                 "id": "11ca9acf-2a3b-4044-b023-9a2a768f4943",
@@ -613,6 +621,14 @@
                 "id": "5c7051bc-b7fe-480a-8683-49cce8bc7501",
                 "resourcePath": "objects\\objArrowTowerLR\\objArrowTowerLR.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "578de2f2-0dcd-422c-91ff-8f9b50f1428b",
+            "Value": {
+                "id": "c5872363-ae70-4026-ac2d-174dabc685fe",
+                "resourcePath": "sprites\\sprTrapDoor\\sprTrapDoor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
