@@ -6,8 +6,7 @@
     "children": [
         "8f42195b-97fa-4767-b81a-b52c8d0da1e6",
         "11973262-660a-4f49-b824-b3ebd705dd1e",
-        "ddec8cb9-892c-4100-a135-adc399415c3d",
-        "de771d43-3a33-4a8e-bfef-f1fbf034415c"
+        "ddec8cb9-892c-4100-a135-adc399415c3d"
     ],
     "filterType": "GMObject",
     "folderName": "Actors",
