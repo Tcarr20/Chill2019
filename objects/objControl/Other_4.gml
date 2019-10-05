@@ -23,3 +23,6 @@ if(!audio_is_playing(Kneels_Boar))
 {
 	audio_play_sound(Kneels_Boar, 1, true);
 }
+
+//Create players
+instance_create_v((room_width/2), (room_height/2), "InstanceDepthStart", objPlayer, 0, PlayerClass.Wolf);

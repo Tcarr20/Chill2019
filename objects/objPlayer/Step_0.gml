@@ -1,4 +1,5 @@
 ///@description Movement & Collision
+if (attackDelay > 0) { attackDelay--; }
 if (hitStun > 0) { hitStun--; }
 if (myState == PlayerState.Hurt) {
 	if (hitStun < hitStunFreeze) { myState = PlayerState.Idle; }
@@ -22,16 +23,47 @@ else if (myState == PlayerState.Fall) {
 }
 else if (myState != PlayerState.Hold) {
 	//Poll attack input
-	if (get_in(in_x, in_check_press, myID)) {
+	if (get_in(in_x, in_check_press, myID) && attackDelay == 0) {
 		//Scythe Swipe
 		if (myClass == PlayerClass.Jack) {
 			//Execute attack if you're not attacking
 			if (attackComboLevel == 0) {
 				attackComboLevel = 1;
-				myState = PlayerState.Attack1;
+				myState = PlayerState.Attack;
 				image_speed = attackImageSpeed;
 				image_index = 0;
+				attackDelay = 10;
 				attackInstance = instance_create_v(x, y, layer, objAttackSlash, self, myFace, attackImageSpeed);
+			}
+			//Buffer attack otherwise
+			else {
+				if (ds_queue_size(attackBuffer) < attackBufferSize) { ds_queue_enqueue(attackBuffer, in_x); }
+				if (alarm_get(0) == -1) { alarm[0] = attackBufferCycle; }
+			}
+		}
+		//Blood ball
+		else if (myClass == PlayerClass.Vamp) {
+			//Execute attack if you're not attacking
+			if (attackComboLevel == 0 && !instance_exists(attackInstance)) {
+				attackComboLevel = 1;
+				myState = PlayerState.Attack;
+				image_speed = attackImageSpeed;
+				image_index = 0;
+				attackInstance = instance_create_v(x, y, layer, objAttackBloodBall, self, myFace, attackImageSpeed);
+			}
+		}
+		//Scythe Swipe
+		else if (myClass == PlayerClass.Wolf) {
+			//Execute attack if you're not attacking
+			if (attackComboLevel == 0) {
+				attackComboLevel = 1;
+				myState = PlayerState.Attack;
+				image_speed = attackImageSpeed;
+				image_index = 0;
+				attackDelay = 10;
+				attackInstance = instance_create_v(x, y, layer, objAttackSwipe, self, myFace, attackImageSpeed);
+				vx += faceOffsetX[myFace]*moveSpeed*0.75;
+				vy += faceOffsetY[myFace]*moveSpeed*0.75;
 			}
 			//Buffer attack otherwise
 			else {
@@ -98,7 +130,7 @@ else if (myState != PlayerState.Hold) {
 	}
 	
 	//Handle animation based on direction & state
-	if (myState == PlayerState.Attack1 || myState == PlayerState.Attack2) {
+	if (myState == PlayerState.Attack) {
 		sprite_index = attackSprites[myFace];
 		image_speed = attackImageSpeed;
 	}

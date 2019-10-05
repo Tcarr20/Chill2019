@@ -1,18 +1,19 @@
 ///@description Set initial values
 //Identify
-myID = 0;
+myID = ct_argument[0];
 myMove = Face.Down;
 myFace = Face.Down;
 myState = PlayerState.Idle;
-myClass = PlayerClass.Vamp;
+myClass = ct_argument[1];
 
 //Health & Damage
 myHealth = 6;
 attackComboLevel = 0;
 attackBuffer = ds_queue_create();
 attackBufferSize = 3;
-attackBufferCycle = 45;
+attackBufferCycle = 55;
 attackInstance = noone;
+attackDelay = 0;
 hitStun = 0;
 hitStunTime = 35;
 hitStunFreeze = 15;
