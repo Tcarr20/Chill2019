@@ -1,0 +1,1 @@
+return objControl.y + (objControl.ideal_h / 2);

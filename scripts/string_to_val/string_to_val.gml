@@ -1,0 +1,76 @@
+///@function string_to_val(string)
+///@description Turn strings into GM Constants/ ASCII values
+///@param string
+switch(argument0){
+    case "Backspace": return vk_backspace; break;
+    case "Tab": return vk_tab; break;
+    case "Enter": return vk_enter; break;
+    case "Left Shift": return vk_lshift; break;
+    case "Right Shift": return vk_rshift; break;
+    case "Left Control": return vk_lcontrol; break;
+    case "Right Control": return vk_rcontrol; break;
+    case "Escape": return vk_escape; break;
+    case "Space": return vk_space; break;
+    case "Left Arrow": return vk_left; break;
+    case "Up Arrow": return vk_up; break;
+    case "Right Arrow": return vk_right; break;
+    case "Down Arrow": return vk_down; break;
+    case "0": return ord("0"); break;
+    case "1": return ord("1"); break;
+    case "2": return ord("2"); break;
+    case "3": return ord("3"); break;
+    case "4": return ord("4"); break;
+    case "5": return ord("5"); break;
+    case "6": return ord("6"); break;
+    case "7": return ord("7"); break;
+    case "8": return ord("8"); break;
+    case "9": return ord("9"); break;
+    case "A": return ord("A"); break;
+    case "B": return ord("B"); break;
+    case "C": return ord("C"); break;
+    case "D": return ord("D"); break;
+    case "E": return ord("E"); break;
+    case "F": return ord("F"); break;
+    case "G": return ord("G"); break;
+    case "H": return ord("H"); break;
+    case "I": return ord("I"); break;
+    case "J": return ord("J"); break;
+    case "K": return ord("K"); break;
+    case "L": return ord("L"); break;
+    case "M": return ord("M"); break;
+    case "N": return ord("N"); break;
+    case "O": return ord("O"); break;
+    case "P": return ord("P"); break;
+    case "Q": return ord("Q"); break;
+    case "R": return ord("R"); break;
+    case "S": return ord("S"); break;
+    case "T": return ord("T"); break;
+    case "U": return ord("U"); break;
+    case "V": return ord("V"); break;
+    case "W": return ord("W"); break;
+    case "X": return ord("X"); break;
+    case "Y": return ord("Y"); break;
+    case "Z": return ord("Z"); break;
+    //Gamepad controls
+    case "L-Stick Left": return gp_axisl_l; break;
+    case "L-Stick Right": return gp_axisl_r; break;
+    case "L-Stick Up": return gp_axisl_u; break;
+    case "L-Stick Down": return gp_axisl_d; break;
+    case "L-Stick Press": return gp_stickl; break;
+    case "R-Stick Press": return gp_stickr; break;
+    case "A Button": return gp_face1; break;
+    case "B Button": return gp_face2; break;
+    case "X Button": return gp_face3; break;
+    case "Y Button": return gp_face4; break;
+    case "Left Shoulder": return gp_shoulderl; break;
+    case "Right Shoulder": return gp_shoulderr; break;
+    case "Left Trigger": return gp_shoulderlb; break;
+    case "Right Trigger": return gp_shoulderrb; break;
+    case "Select": return gp_select; break;
+    case "Start": return gp_start; break;
+    case "D-Pad Left": return gp_padl; break;
+    case "D-Pad Right": return gp_padr; break;
+    case "D-Pad Up": return gp_padu; break;
+    case "D-Pad Down": return gp_padd; break;
+	default: return undefined; break;
+}
