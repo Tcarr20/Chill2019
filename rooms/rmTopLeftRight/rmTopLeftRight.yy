@@ -7,7 +7,6 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "6e834e3a-49c6-45aa-aab1-707936cd7fc7",
         "ff3d8d65-c46a-4e0a-8565-14f1d9f2fa63",
         "bb465dc2-444f-446c-9410-91bc52d888bb",
         "290225b8-1b4f-4eb4-9265-74ec97af9bb3",
@@ -117,7 +116,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_6A3A42D2","id": "6e834e3a-49c6-45aa-aab1-707936cd7fc7","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "996e2111-84c0-4636-b82b-4a66a8479055","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_6A3A42D2","objId": "fa11ec74-5fcf-4559-9ad6-1e059b9f2be7","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 0}
+
             ],
             "layers": [
 
@@ -137,7 +136,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": false,
+            "hierarchyVisible": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -188,7 +187,7 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": false,
-            "visible": false
+            "visible": true
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
@@ -407,7 +406,7 @@
                     2147483668,16,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483672,
                     2147483668,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,2147483667,
                     2147483668,2147483664,37,2147483664,2147483664,2147483664,2147483664,2147483664,2147483664,16,2147483664,2147483667,
-                    2147483673,2147483675,0,2147483675,2147483675,2147483676,2147483676,2147483676,2147483676,16,2147483676,2147483677
+                    2147483673,2147483675,41,2147483675,2147483675,2147483676,2147483676,2147483676,2147483676,16,2147483676,2147483677
                 ]
             },
             "tilesetId": "8fc0319b-5c65-410e-bb90-e832715e097d",
@@ -422,7 +421,7 @@
             "id": "d6819eaa-ed58-4241-a0ff-4ae90a714a7a",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4286529792 },
+            "colour": { "Value": 4284822143 },
             "depth": 1168,
             "grid_x": 32,
             "grid_y": 32,
