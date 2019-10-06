@@ -18,19 +18,19 @@ for(var i=0; i<global.roomGridW; i++) {
 	for(var j=0; j<global.roomGridH; j++) { global.roomGrid[i, j] = -1; }
 }
 //Define rooms
-SlideTopRight = scrDefineMapCell(true, rmSlideTopRight, sprMapTileSlideTopRight, [false, false, false, false]);
-SlidePuzzleTest = scrDefineMapCell(true, rmSlidePuzzleTest, -1, [false, false, false, false]);
-SlidePlaceholder4 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
-SlidePlaceholder5 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
-SlidePlaceholder6 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
-SlidePlaceholder1 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
-SlidePlaceholder2 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
-SlidePlaceholder3 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
+SlideTopRight = scrDefineMapCell(true, rmSlideTopRight, sprMapTileSlideTopRight, [true, true, false, false]);
+SlideBoss = scrDefineMapCell(true, rmBoss, sprMapTileBoss, [false, false, false, true]);
+SlideFourDir = scrDefineMapCell(true, rmSlideFourDir, sprMapTileSlideAllDir, [true, true, true, true]);
+SlideBotRight = scrDefineMapCell(true, rmSlideBotRight, -1, [false, true, true, false]);
+SlideBotLeftRight = scrDefineMapCell(true, rmSlideBotLeftRight, sprMapBotLeftRight, [false, true, true, true]);
+SlideBotLeft = scrDefineMapCell(true, rmSlideBotLeft, sprMapTileSlideBotLeft, [false, false, true, true]);
+SlideTopLeftRight = scrDefineMapCell(true, rmTopLeftRight, sprMapTileSlideTopLeftRight, [true, true, false, true]);
+SlideTopBotLeft = scrDefineMapCell(true, rmSlideTopBotLeft, sprMapTileSlideTopBotLeft, [true, false, true, true]);
 
-global.roomGrid[0, 0] = SlidePuzzleTest;	global.roomGrid[1, 0] = SlidePlaceholder4;		global.roomGrid[2, 0] = SlideTopRight;
-global.roomGrid[0, 1] = SlidePlaceholder5;		global.roomGrid[1, 1] = -1;					global.roomGrid[2, 1] = SlidePlaceholder6;
-global.roomGrid[0, 2] = SlidePlaceholder1;	global.roomGrid[1, 2] = SlidePlaceholder2;	global.roomGrid[2, 2] = SlidePlaceholder3;
-global.roomGridSpace = [1, 1];
+global.roomGrid[0, 0] = SlideTopRight;	global.roomGrid[1, 0] = SlideTopBotLeft;		global.roomGrid[2, 0] = SlideBoss;
+global.roomGrid[0, 1] = SlideBotRight;		global.roomGrid[1, 1] = SlideBotLeftRight;					global.roomGrid[2, 1] = SlideBotLeft;
+global.roomGrid[0, 2] = -1;	global.roomGrid[1, 2] = SlideFourDir;	global.roomGrid[2, 2] = SlideTopLeftRight;
+global.roomGridSpace = [0, 2];
 global.roomEnterFrom = Face.Down;
 
 //////Control setup

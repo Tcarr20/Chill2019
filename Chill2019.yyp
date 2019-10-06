@@ -26,7 +26,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -2861,6 +2861,14 @@
                 "id": "dadd4523-442e-49c4-9cb5-04a44dbb25e0",
                 "resourcePath": "views\\b544081c-03e6-4c1d-a838-4250adfe7519.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b55a3e97-7a6f-42f3-93f6-43b759fa1c09",
+            "Value": {
+                "id": "5674042d-b6b2-4117-9176-987ee3291f98",
+                "resourcePath": "sprites\\sprMapTileBoss\\sprMapTileBoss.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
