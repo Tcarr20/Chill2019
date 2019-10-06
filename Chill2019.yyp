@@ -912,6 +912,14 @@
             }
         },
         {
+            "Key": "597ef132-3dd6-4cd0-b2bb-e1f99af4c4ab",
+            "Value": {
+                "id": "4e5dda1c-4d63-4ce9-9b57-c6a91be94c74",
+                "resourcePath": "objects\\objReverseTrapSpikes\\objReverseTrapSpikes.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "59aab858-0041-417e-a9ec-fde89c10f610",
             "Value": {
                 "id": "6985e66c-7fbb-4eb9-b2dd-8bf94a8e5048",
@@ -2064,6 +2072,14 @@
             }
         },
         {
+            "Key": "bd2089eb-d762-4a77-a7d7-8befc549cbbb",
+            "Value": {
+                "id": "14449ec9-0fec-4ffc-bd2e-cfc13e789bf8",
+                "resourcePath": "sprites\\sprTrapSpikesUp\\sprTrapSpikesUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bd481890-7cf3-4f62-b7a3-feedf7a5fb28",
             "Value": {
                 "id": "917d0386-01e1-40d2-b8a1-a4d69a40e77b",
@@ -2157,6 +2173,14 @@
                 "id": "d3dc8f40-a8af-41ec-b928-34a18efb7edd",
                 "resourcePath": "scripts\\opmenu_get_key\\opmenu_get_key.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c8190b3c-d6dd-411b-a3d7-2908beaa25e8",
+            "Value": {
+                "id": "02bf4757-fc28-4a82-82cd-801102059912",
+                "resourcePath": "rooms\\rmSlideBotLeft\\rmSlideBotLeft.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
