@@ -2,8 +2,8 @@
 event_inherited();
 //Identify
 myID = ct_argument[0];
-myMove = Face.Down;
-myFace = Face.Down;
+myMove = ct_argument[3];
+myFace = ct_argument[3];
 myState = ActorState.Idle;
 myClass = ct_argument[1];
 
