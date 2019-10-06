@@ -1,2 +1,2 @@
 ///@description Update depth ordering
-depth_set();
+if (y >= 0 && y < room_height) { depth_set(); }

@@ -1,2 +1,3 @@
 ///@description Start to die
-alarm[0] = 1;
+if (scrStop()) { exit; }
+if (!variable_instance_exists(other, "isArrow")) { alarm[0] = 1; }

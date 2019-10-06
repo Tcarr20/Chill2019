@@ -1,4 +1,29 @@
 ///@description Set global values
+//////Game setup
+global.stopFlagText = false;
+global.stopFlagMenu = false;
+
+global.roomGridW = 3;
+global.roomGridH = 3;
+global.roomGridSpace = [0, 0];
+for(var i=0; i<global.roomGridW; i++) {
+	for(var j=0; j<global.roomGridH; j++) { global.roomGrid[i, j] = -1; }
+}
+//Define rooms
+SlideTopRight = scrDefineMapCell(true, rmSlideTopRight, sprMapTileSlideTopRight, [false, false, false, false]);
+SlidePuzzleTest = scrDefineMapCell(true, rmSlidePuzzleTest, -1, [false, false, false, false]);
+SlideBotLeftRight = scrDefineMapCell(true, rmSlideBotLeftRight, -1, [false, false, false, false]);
+SlideBotRight = scrDefineMapCell(true, rmSlideBotRight, -1, [false, false, false, false]);
+SlideFourDir = scrDefineMapCell(true, rmSlideBotRight, -1, [false, false, false, false]);
+SlidePlaceholder1 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
+SlidePlaceholder2 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
+SlidePlaceholder3 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
+
+global.roomGrid[0, 0] = SlidePuzzleTest;	global.roomGrid[1, 0] = SlideBotRight;		global.roomGrid[2, 0] = SlideTopRight;
+global.roomGrid[0, 1] = SlideFourDir;		global.roomGrid[1, 1] = -1;					global.roomGrid[2, 1] = SlideBotLeftRight;
+global.roomGrid[0, 2] = SlidePlaceholder1;	global.roomGrid[1, 2] = SlidePlaceholder2;	global.roomGrid[2, 2] = SlidePlaceholder3;
+global.roomGridSpace = [1, 1];
+
 //////Control setup
 //Define controller state arrays
 for(var i=0; i<NUM_PLAYERS; i++) {

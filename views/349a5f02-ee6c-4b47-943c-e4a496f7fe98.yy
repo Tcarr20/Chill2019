@@ -11,7 +11,11 @@
         "2f81692d-c504-4798-8a1c-3d7cd74aa6d0",
         "c0c54d4e-352b-4c35-9a29-a045239b9cb3",
         "7c97ffbb-b5dc-4641-8be2-3a41b5345a4f",
-        "be1ccba7-4fef-4870-8da4-1a9a75b91d80"
+        "be1ccba7-4fef-4870-8da4-1a9a75b91d80",
+        "80a6a265-18e3-480a-b6ad-3b50acd55956",
+        "541797df-8975-4b61-871f-6e246a2dc857",
+        "7c91d59f-5a26-45b7-9900-b7df297e03ca",
+        "fe481243-4dea-4a8c-8278-a032fb15ab85"
     ],
     "filterType": "GMSprite",
     "folderName": "Vamp",

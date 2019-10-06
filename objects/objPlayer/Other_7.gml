@@ -11,6 +11,7 @@ if (myState == ActorState.Attack)
 					//Do a level 2 attack
 					attackComboLevel = 2;
 					myState = ActorState.Attack;
+					sprite_index = slashSprites[myFace];
 					image_speed = attackImageSpeed;
 					attackDelay = 10;
 					attackInstance = instance_create_v(x, y, layer, objAttackSlash2, self, myFace, attackImageSpeed);
@@ -45,6 +46,7 @@ if (myState == ActorState.Attack)
 					//Do a level 2 attack
 					attackComboLevel = 2;
 					myState = ActorState.Attack;
+					sprite_index = attackSprites[myFace];
 					image_speed = attackImageSpeed;
 					attackInstance = instance_create_v(x, y, layer, objAttackSwipe2, self, myFace, attackImageSpeed);
 					vx += faceOffsetX[myFace]*moveSpeed*0.75;
@@ -66,6 +68,7 @@ if (myState == ActorState.Attack)
 					//Do a level 2 attack
 					attackComboLevel = 3;
 					myState = ActorState.Attack;
+					sprite_index = attackSprites[myFace];
 					image_speed = attackImageSpeed;
 					attackInstance = instance_create_v(x, y, layer, objAttackSwipe3, self, myFace, attackImageSpeed);
 					vx += faceOffsetX[myFace]*moveSpeed*1.25;

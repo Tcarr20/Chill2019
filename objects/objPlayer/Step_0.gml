@@ -1,4 +1,5 @@
 ///@description Movement & Collision
+event_inherited();
 if (attackDelay > 0) { attackDelay--; }
 if (hitStun > 0) { hitStun--; }
 if (myState == ActorState.Hurt) {
@@ -24,12 +25,13 @@ else if (myState == ActorState.Fall) {
 else if (myState != ActorState.Hold) {
 	//Poll attack input
 	if (get_in(in_x, in_check_press, myID) && attackDelay == 0) {
-		//Scythe Swipe
+		//Scythe Slash
 		if (myClass == PlayerClass.Jack) {
 			//Execute attack if you're not attacking
 			if (attackComboLevel == 0) {
 				attackComboLevel = 1;
 				myState = ActorState.Attack;
+				sprite_index = slashSprites[myFace];
 				image_speed = attackImageSpeed;
 				image_index = 0;
 				attackInstance = instance_create_v(x, y, layer, objAttackSlash, self, myFace, attackImageSpeed);
@@ -46,17 +48,19 @@ else if (myState != ActorState.Hold) {
 			if (attackComboLevel == 0 && !instance_exists(attackInstance)) {
 				attackComboLevel = 1;
 				myState = ActorState.Attack;
+				sprite_index = attackSprites[myFace];
 				image_speed = attackImageSpeed;
 				image_index = 0;
 				attackInstance = instance_create_v(x, y, layer, objAttackBloodBall, self, myFace, attackImageSpeed);
 			}
 		}
-		//Scythe Swipe
+		//Swipe
 		else if (myClass == PlayerClass.Wolf) {
 			//Execute attack if you're not attacking
 			if (attackComboLevel == 0) {
 				attackComboLevel = 1;
 				myState = ActorState.Attack;
+				sprite_index = attackSprites[myFace];
 				image_speed = attackImageSpeed;
 				image_index = 0;
 				attackInstance = instance_create_v(x, y, layer, objAttackSwipe, self, myFace, attackImageSpeed);
@@ -128,11 +132,7 @@ else if (myState != ActorState.Hold) {
 	}
 	
 	//Handle animation based on direction & state
-	if (myState == ActorState.Attack) {
-		sprite_index = attackSprites[myFace];
-		image_speed = attackImageSpeed;
-	}
-	else if (myState == ActorState.Idle) {
+	if (myState == ActorState.Idle) {
 		sprite_index = idleSprites[myFace];
 		image_speed = idleImageSpeed;
 	}

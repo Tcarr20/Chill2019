@@ -1,3 +1,4 @@
+///@description Update custom paths
 if (cpt_update(myPath, myPos))
 {
 	x = myPos[X];

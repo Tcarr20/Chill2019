@@ -1,4 +1,5 @@
 ///@description Spike damage
+if (scrStop()) { exit; }
 if (other.myDamage > 0 && hitStun == 0) {
 	takeDamage = other.myDamage;
 	takeKnockback = other.myKnockback;

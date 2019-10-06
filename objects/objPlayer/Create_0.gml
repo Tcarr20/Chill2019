@@ -1,4 +1,5 @@
 ///@description Set initial values
+event_inherited();
 //Identify
 myID = ct_argument[0];
 myMove = Face.Down;
@@ -40,42 +41,26 @@ faceOffsetY = [0, -INV_RT2, -1, -INV_RT2, 0, INV_RT2, 1, INV_RT2];
 if (myID == 0) {
 	idleSprites = [sprPlayerGIdleR, -1, sprPlayerGIdleU, -1, sprPlayerGIdleL, -1, sprPlayerGIdleD, -1];
 	moveSprites = [sprPlayerGMoveR, -1, sprPlayerGMoveU, -1, sprPlayerGMoveL, -1, sprPlayerGMoveD, -1];
-	attackSprites = [sprPlayerAttackR, -1, sprPlayerAttackU, -1, sprPlayerAttackL, -1, sprPlayerAttackD, -1];
-	hurtSprites = [sprPlayerHurtR, -1, sprPlayerHurtU, -1, sprPlayerHurtL, -1, sprPlayerHurtD, -1];
+	hurtSprites = [sprPlayerGIdleR, -1, sprPlayerGIdleU, -1, sprPlayerGIdleL, -1, sprPlayerGIdleD, -1];
+	attackSprites = [sprPlayerGAttackR, -1, sprPlayerGAttackU, -1, sprPlayerGAttackL, -1, sprPlayerGAttackD, -1];
+	slashSprites = [sprPlayerGSlashR, -1, sprPlayerGSlashU, -1, sprPlayerGSlashL, -1, sprPlayerGSlashD, -1];
+	bashSprites = [sprPlayerGBashR, -1, sprPlayerGBashU, -1, sprPlayerGBashL, -1, sprPlayerGBashD, -1];
 }
 if (myID == 1) {
 	idleSprites = [sprPlayerOIdleR, -1, sprPlayerOIdleU, -1, sprPlayerOIdleL, -1, sprPlayerOIdleD, -1];
 	moveSprites = [sprPlayerOMoveR, -1, sprPlayerOMoveU, -1, sprPlayerOMoveL, -1, sprPlayerOMoveD, -1];
-	attackSprites = [sprPlayerAttackR, -1, sprPlayerAttackU, -1, sprPlayerAttackL, -1, sprPlayerAttackD, -1];
-	hurtSprites = [sprPlayerHurtR, -1, sprPlayerHurtU, -1, sprPlayerHurtL, -1, sprPlayerHurtD, -1];
+	hurtSprites = [sprPlayerOIdleR, -1, sprPlayerOIdleU, -1, sprPlayerOIdleL, -1, sprPlayerOIdleD, -1];
+	attackSprites = [sprPlayerOAttackR, -1, sprPlayerOAttackU, -1, sprPlayerOAttackL, -1, sprPlayerOAttackD, -1];
+	slashSprites = [sprPlayerOSlashR, -1, sprPlayerOSlashU, -1, sprPlayerOSlashL, -1, sprPlayerOSlashD, -1];
+	bashSprites = [sprPlayerOBashR, -1, sprPlayerOBashU, -1, sprPlayerOBashL, -1, sprPlayerOBashD, -1];
 }
 if (myID == 2) {
-	idleSprites = [sprPlayerGIdleR, -1, sprPlayerGIdleU, -1, sprPlayerGIdleL, -1, sprPlayerGIdleD, -1];
-	moveSprites = [sprPlayerGMoveR, -1, sprPlayerGMoveU, -1, sprPlayerGMoveL, -1, sprPlayerGMoveD, -1];
-	attackSprites = [sprPlayerAttackR, -1, sprPlayerAttackU, -1, sprPlayerAttackL, -1, sprPlayerAttackD, -1];
-	hurtSprites = [sprPlayerHurtR, -1, sprPlayerHurtU, -1, sprPlayerHurtL, -1, sprPlayerHurtD, -1];
-}
-headIdleSprites = array_create(8, -1);
-headMoveSprites = array_create(8, -1);
-headAttackSprites = array_create(8, -1);
-headHurtSprites = array_create(8, -1);
-if (myClass == PlayerClass.Jack) {
-	headIdleSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
-	headMoveSprites = [sprJackMoveR, -1, sprJackMoveU, -1, sprJackMoveL, -1, sprJackMoveD, -1];
-	//headAttackSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
-	//headHurtSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
-}
-else if (myClass == PlayerClass.Vamp) {
-	headIdleSprites = [sprVampIdleR, -1, sprVampIdleU, -1, sprVampIdleL, -1, sprVampIdleD, -1];
-	headMoveSprites = [sprVampMoveR, -1, sprVampMoveU, -1, sprVampMoveL, -1, sprVampMoveD, -1];
-	//headAttackSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
-	//headHurtSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
-}
-else if (myClass == PlayerClass.Wolf) {
-	headIdleSprites = [sprWolfIdleR, -1, sprWolfIdleU, -1, sprWolfIdleL, -1, sprWolfIdleD, -1];
-	headMoveSprites = [sprWolfMoveR, -1, sprWolfMoveU, -1, sprWolfMoveL, -1, sprWolfMoveD, -1];
-	//headAttackSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
-	//headHurtSprites = [sprJackIdleR, -1, sprJackIdleU, -1, sprJackIdleL, -1, sprJackIdleD, -1];
+	idleSprites = [sprPlayerRIdleR, -1, sprPlayerRIdleU, -1, sprPlayerRIdleL, -1, sprPlayerRIdleD, -1];
+	moveSprites = [sprPlayerRMoveR, -1, sprPlayerRMoveU, -1, sprPlayerRMoveL, -1, sprPlayerRMoveD, -1];
+	hurtSprites = [sprPlayerRIdleR, -1, sprPlayerRIdleU, -1, sprPlayerRIdleL, -1, sprPlayerRIdleD, -1];
+	attackSprites = [sprPlayerRAttackR, -1, sprPlayerRAttackU, -1, sprPlayerRAttackL, -1, sprPlayerRAttackD, -1];
+	slashSprites = [sprPlayerRSlashR, -1, sprPlayerRSlashU, -1, sprPlayerRSlashL, -1, sprPlayerRSlashD, -1];
+	bashSprites = [sprPlayerRBashR, -1, sprPlayerRBashU, -1, sprPlayerRBashL, -1, sprPlayerRBashD, -1];
 }
 idleImageSpeed = 0.4;
 walkImageSpeed = 0.6;

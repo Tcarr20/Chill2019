@@ -8,7 +8,7 @@ gml_pragma("global", "macros()");
 #macro debug:DEBUG true
 #macro mask_width sprite_get_width(mask_index)
 #macro mask_height sprite_get_width(mask_index)
-#macro NUM_PLAYERS 2
+#macro NUM_PLAYERS 3
 #macro INV_RT2 0.7071
 
 #macro NUM_TIMELINES 4

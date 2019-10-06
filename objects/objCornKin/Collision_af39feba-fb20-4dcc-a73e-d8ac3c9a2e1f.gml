@@ -1,4 +1,5 @@
 ///@description Spikes damage
+if (scrStop()) { exit; }
 if (other.myDamage > 0 && hitStun == 0) {
 	myState = ActorState.Hurt;
 	takeDamage = other.myDamage;
