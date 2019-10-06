@@ -13,7 +13,6 @@
         "e3e16b26-a0b2-43dd-9c06-4c61f58cf795",
         "083793ca-eaae-43d0-ab2a-26f20696cda7",
         "c2333f0c-ce12-41ea-90e1-d614e319ef1f",
-        "344e9fcd-e49d-4b48-9cfc-ce9c59c96b48",
         "7630c304-6206-48ba-9b01-977cc34bca4c",
         "c187d674-3e6c-49e0-b791-f3c623b4b13e",
         "bf4d4b23-edd7-4efc-9b7d-4fc0c04d024a",
@@ -23,7 +22,8 @@
         "defa1620-b8be-40ae-bcef-0877ea876e50",
         "c21d71f4-6085-4093-82bd-4fc3af3008f6",
         "a1d81c87-e274-4148-8399-807219b62f2d",
-        "83182ea4-8da6-43a8-987c-30bcb1513255"
+        "83182ea4-8da6-43a8-987c-30bcb1513255",
+        "f2032d19-bb4b-48f8-81f8-9c870b097b68"
     ],
     "filterType": "GMSprite",
     "folderName": "Jack",
