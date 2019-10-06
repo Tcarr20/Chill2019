@@ -20,6 +20,6 @@ tileRowY[0] = 88; tileRowY[1] = 288; tileRowY[2] = 488;
 
 //Initial layout
 roomGrid[0, 0] = 1; roomGrid[1, 0] = 1; roomGrid[2, 0] = 1; 
-roomGrid[0, 1] = 1; roomGrid[1, 1] = -1; roomGrid[2, 1] = 1; 
-roomGrid[0, 2] = 1; roomGrid[1, 2] = 1; roomGrid[2, 2] = 1;
-gridSpace = [1, 1];
+roomGrid[0, 1] = 1; roomGrid[1, 1] = 1; roomGrid[2, 1] = 1; 
+roomGrid[0, 2] = -1; roomGrid[1, 2] = 1; roomGrid[2, 2] = 1;
+gridSpace = [0, 2];

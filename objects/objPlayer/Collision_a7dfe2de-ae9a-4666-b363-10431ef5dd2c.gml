@@ -5,9 +5,51 @@ if (other.image_index > 0 && myState != PlayerState.Fall) {
 	var _dx = abs((other.x + 32) - x);
 	var _dy = abs((other.y + 32) - y);
 	//Fall in pit
-	if (_dx < 24 && _dy < 24) {
+	if (objPlayer.myFace == Face.Right && _dx < 24 && _dy < 24) {
 		//Set respawn position
-		respawnPos = [other.x + 32 + lengthdir_x(90, _angle), other.y + 32 + lengthdir_y(90, _angle)];
+		respawnPos = [other.x - 32, other.y + 16];
+		//Snap to pit center
+		vx = 0;
+		vy = 0;
+		x = other.x + 32;
+		y = other.y + 32;
+		//Set sprite
+		sprite_index = hurtSprites[myFace];
+		image_speed = 0;
+		//Set falling state
+		myState = PlayerState.Fall;
+	}
+	else if (objPlayer.myFace == Face.Up && _dx < 24 && _dy < 24) {
+		//Set respawn position
+		respawnPos = [other.x + 32, other.y + 80];
+		//Snap to pit center
+		vx = 0;
+		vy = 0;
+		x = other.x + 32;
+		y = other.y + 32;
+		//Set sprite
+		sprite_index = hurtSprites[myFace];
+		image_speed = 0;
+		//Set falling state
+		myState = PlayerState.Fall;
+	}
+	else if (objPlayer.myFace == Face.Left && _dx < 24 && _dy < 24) {
+		//Set respawn position
+		respawnPos = [other.x + 96, other.y + 16];
+		//Snap to pit center
+		vx = 0;
+		vy = 0;
+		x = other.x + 32;
+		y = other.y + 32;
+		//Set sprite
+		sprite_index = hurtSprites[myFace];
+		image_speed = 0;
+		//Set falling state
+		myState = PlayerState.Fall;
+	}
+	else if (objPlayer.myFace == Face.Down && _dx < 24 && _dy < 24) {
+		//Set respawn position
+		respawnPos = [other.x + 32, other.y - 48];
 		//Snap to pit center
 		vx = 0;
 		vy = 0;

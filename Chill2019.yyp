@@ -200,6 +200,14 @@
             }
         },
         {
+            "Key": "10fb0771-f757-4164-9b78-ef9a25bd95d6",
+            "Value": {
+                "id": "646177be-9b96-4264-96f9-0dc9fe54eea6",
+                "resourcePath": "objects\\objWall\\objWall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "115c5d9d-97d1-4013-99d8-05f438b2f50c",
             "Value": {
                 "id": "879e16d2-50d7-4fe7-9a06-2daee7f19e01",
@@ -1267,7 +1275,7 @@
             "Key": "7b5f9dc5-2ea2-41f3-8b23-ef58dab005d7",
             "Value": {
                 "id": "f2b0fd7d-65a7-45e8-9cf7-02bc967af298",
-                "resourcePath": "rooms\\rmOrigin\\rmOrigin.yy",
+                "resourcePath": "rooms\\rmSlideFourDir\\rmSlideFourDir.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1552,6 +1560,14 @@
             }
         },
         {
+            "Key": "9e99c7ab-c7ca-43e8-b22b-d33f77a826ab",
+            "Value": {
+                "id": "97423f32-80b8-48a4-82b5-77c1a01038aa",
+                "resourcePath": "rooms\\rmSlideBotRight\\rmSlideBotRight.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9efe27ed-dd53-4457-8f7a-60e4eb73f40d",
             "Value": {
                 "id": "383ae4db-a12b-4568-9e8e-ab52c3168412",
@@ -1651,7 +1667,7 @@
             "Key": "a659643f-62ae-4cda-bd0a-e860542c21e2",
             "Value": {
                 "id": "ec63722f-6292-40cd-9d93-c46b6176b5a4",
-                "resourcePath": "rooms\\rmSlide1\\rmSlide1.yy",
+                "resourcePath": "rooms\\rmSlideTopRight\\rmSlideTopRight.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1709,6 +1725,14 @@
                 "id": "50d68b2c-cef0-43d6-902c-879890252f7f",
                 "resourcePath": "views\\aa819bce-8ae7-4acc-91eb-196b2a85330d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "aadb95e1-8009-4f37-9f7b-f204e1b5d7db",
+            "Value": {
+                "id": "ff3019bb-df70-415b-83ce-3dd97149153f",
+                "resourcePath": "rooms\\rmSlideBotLeftRight\\rmSlideBotLeftRight.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2120,6 +2144,14 @@
             }
         },
         {
+            "Key": "dc170342-257e-4462-90b3-6a359dcb5533",
+            "Value": {
+                "id": "a3240fac-fec9-4f3b-a4f7-5a21dfd0394f",
+                "resourcePath": "views\\9e99c7ab-c7ca-43e8-b22b-d33f77a826ab-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dc804bcd-2460-4fc0-b421-ce10dcc4df40",
             "Value": {
                 "id": "2dbd3965-dc31-410e-9117-5bcb7794e0ec",
@@ -2325,6 +2357,14 @@
                 "id": "048209b8-4f8b-4d8b-b7ba-7e8ddaaf21ce",
                 "resourcePath": "scripts\\get_in\\get_in.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f175cb79-8451-47d8-beed-5eff4126f62b",
+            "Value": {
+                "id": "6368bc43-6f04-4ee9-9158-6b974745d06e",
+                "resourcePath": "views\\7a8784a0-e85d-4a63-9d44-06016c181c12-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
