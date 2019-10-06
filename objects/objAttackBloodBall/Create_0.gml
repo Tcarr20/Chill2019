@@ -1,4 +1,5 @@
 ///@description Initial values
+event_inherited();
 lifetime = 45;
 moveFric = 0.3;
 myPar = ct_argument[0];

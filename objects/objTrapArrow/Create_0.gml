@@ -1,6 +1,7 @@
 ///@description Initial values
 myFace = ct_argument[0];
 myDamage = 1;
+myKnockback = 0.15;
 switch(myFace) {
 	case Face.Left:
 		sprite_index = sprTrapArrowL;

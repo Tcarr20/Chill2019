@@ -1,5 +1,5 @@
 ///@description Falling in pits
-if (other.image_index > 0 && myState != PlayerState.Fall) {
+if (other.myDamage > 0 && myState != ActorState.Fall) {
 	//Get distance to center
 	var _angle = point_direction(other.x + 32, other.y + 32, x, y);
 	var _dx = abs((other.x + 32) - x);
@@ -59,7 +59,7 @@ if (other.image_index > 0 && myState != PlayerState.Fall) {
 		sprite_index = hurtSprites[myFace];
 		image_speed = 0;
 		//Set falling state
-		myState = PlayerState.Fall;
+		myState = ActorState.Fall;
 	}
 	//Get dragged in pit
 	else {

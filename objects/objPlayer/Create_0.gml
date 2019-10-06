@@ -3,7 +3,7 @@
 myID = ct_argument[0];
 myMove = Face.Down;
 myFace = Face.Down;
-myState = PlayerState.Idle;
+myState = ActorState.Idle;
 myClass = ct_argument[1];
 
 //Health & Damage
@@ -18,6 +18,9 @@ hitStun = 0;
 hitStunTime = 35;
 hitStunFreeze = 15;
 respawnPos = [x, y];
+takeDamage = 0;
+takeKnockback = 0;
+knockbackDirection = 0;
 alarm[0] = attackBufferCycle;
 
 //Motion control
@@ -41,8 +44,8 @@ if (myID == 0) {
 	hurtSprites = [sprPlayerHurtR, -1, sprPlayerHurtU, -1, sprPlayerHurtL, -1, sprPlayerHurtD, -1];
 }
 if (myID == 1) {
-	idleSprites = [sprPlayerGIdleR, -1, sprPlayerGIdleU, -1, sprPlayerGIdleL, -1, sprPlayerGIdleD, -1];
-	moveSprites = [sprPlayerGMoveR, -1, sprPlayerGMoveU, -1, sprPlayerGMoveL, -1, sprPlayerGMoveD, -1];
+	idleSprites = [sprPlayerOIdleR, -1, sprPlayerOIdleU, -1, sprPlayerOIdleL, -1, sprPlayerOIdleD, -1];
+	moveSprites = [sprPlayerOMoveR, -1, sprPlayerOMoveU, -1, sprPlayerOMoveL, -1, sprPlayerOMoveD, -1];
 	attackSprites = [sprPlayerAttackR, -1, sprPlayerAttackU, -1, sprPlayerAttackL, -1, sprPlayerAttackD, -1];
 	hurtSprites = [sprPlayerHurtR, -1, sprPlayerHurtU, -1, sprPlayerHurtL, -1, sprPlayerHurtD, -1];
 }

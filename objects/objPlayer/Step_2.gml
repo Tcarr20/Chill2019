@@ -12,49 +12,42 @@ else if (vxNew > 0) { _coll_x = bbox_right; }
 if (vyNew < 0) { _coll_y = bbox_top; }
 else if (vyNew > 0) { _coll_y = bbox_bottom; }
 
-
 //Vertical movement
 for(var i=abs(vyNew); i>0; i--) {
-	if (!position_meeting(_coll_x, _coll_y + sign(vyNew), objSolid))
+	if (!place_meeting(x, y + sign(vyNew), objSolid))
 	{
 		//Move vertically
 		y += sign(vyNew);
-		_coll_y += sign(vyNew);
 	}
 	else
 	{
 		//Slide right
-		if (!position_meeting(_coll_x + (i*2), _coll_y + sign(vyNew), objSolid)) {
+		if (!place_meeting(x + (i*2), y + sign(vyNew), objSolid)) {
 			x += (i*2);
-			_coll_x += (i*2);
 		}
 		//Slide left
-		else if (!position_meeting(_coll_x - (i*2), _coll_y + sign(vyNew), objSolid)) {
+		else if (!place_meeting(x - (i*2), y + sign(vyNew), objSolid)) {
 			x -= (i*2);
-			_coll_x -= (i*2);
 		}
 	}
 }
 
 //Horizontal movement
 for(var i=abs(vxNew); i>0; i--) {
-	if (!position_meeting(_coll_x + sign(vxNew), _coll_y, objSolid))
+	if (!place_meeting(x + sign(vxNew), y, objSolid))
 	{
 		//Move horizontally
 		x += sign(vxNew);
-		_coll_x += sign(vxNew);
 	}
 	else
 	{
 		//Slide down
-		if (!position_meeting(_coll_x + sign(vxNew), _coll_y + ceil(i/2), objSolid)) {
+		if (!place_meeting(x + sign(vxNew), y + ceil(i/2), objSolid)) {
 			y += ceil(i/2);
-			_coll_y += ceil(i/2);
 		}
 		//Slide up
-		else if (!position_meeting(_coll_x + sign(vxNew), _coll_y - ceil(i/2), objSolid)) {
+		else if (!place_meeting(x + sign(vxNew), y - ceil(i/2), objSolid)) {
 			y -= ceil(i/2);
-			_coll_y -= ceil(i/2);
 		}
 	}
 }

@@ -1,10 +1,10 @@
 ///@description Movement & Collision
 if (attackDelay > 0) { attackDelay--; }
 if (hitStun > 0) { hitStun--; }
-if (myState == PlayerState.Hurt) {
-	if (hitStun < hitStunFreeze) { myState = PlayerState.Idle; }
+if (myState == ActorState.Hurt) {
+	if (hitStun < hitStunFreeze) { myState = ActorState.Idle; }
 }
-else if (myState == PlayerState.Fall) {
+else if (myState == ActorState.Fall) {
 	image_xscale -= 0.025;
 	image_yscale -= 0.025;
 	if (image_xscale <= 0) {
@@ -14,14 +14,14 @@ else if (myState == PlayerState.Fall) {
 		x = respawnPos[X];
 		y = respawnPos[Y];
 		myHealth -= 1;
-		if (myHealth <= 0) { event_perform(ev_other, ev_user0); }
+		if (myHealth <= 0) { event_perform(ev_other, ev_user1); }
 		else {
-			myState = PlayerState.Idle;
+			myState = ActorState.Idle;
 			hitStun = hitStunTime; 
 		}
 	}
 }
-else if (myState != PlayerState.Hold) {
+else if (myState != ActorState.Hold) {
 	//Poll attack input
 	if (get_in(in_x, in_check_press, myID) && attackDelay == 0) {
 		//Scythe Swipe
@@ -29,10 +29,9 @@ else if (myState != PlayerState.Hold) {
 			//Execute attack if you're not attacking
 			if (attackComboLevel == 0) {
 				attackComboLevel = 1;
-				myState = PlayerState.Attack;
+				myState = ActorState.Attack;
 				image_speed = attackImageSpeed;
 				image_index = 0;
-				attackDelay = 10;
 				attackInstance = instance_create_v(x, y, layer, objAttackSlash, self, myFace, attackImageSpeed);
 			}
 			//Buffer attack otherwise
@@ -46,7 +45,7 @@ else if (myState != PlayerState.Hold) {
 			//Execute attack if you're not attacking
 			if (attackComboLevel == 0 && !instance_exists(attackInstance)) {
 				attackComboLevel = 1;
-				myState = PlayerState.Attack;
+				myState = ActorState.Attack;
 				image_speed = attackImageSpeed;
 				image_index = 0;
 				attackInstance = instance_create_v(x, y, layer, objAttackBloodBall, self, myFace, attackImageSpeed);
@@ -57,10 +56,9 @@ else if (myState != PlayerState.Hold) {
 			//Execute attack if you're not attacking
 			if (attackComboLevel == 0) {
 				attackComboLevel = 1;
-				myState = PlayerState.Attack;
+				myState = ActorState.Attack;
 				image_speed = attackImageSpeed;
 				image_index = 0;
-				attackDelay = 10;
 				attackInstance = instance_create_v(x, y, layer, objAttackSwipe, self, myFace, attackImageSpeed);
 				vx += faceOffsetX[myFace]*moveSpeed*0.75;
 				vy += faceOffsetY[myFace]*moveSpeed*0.75;
@@ -79,48 +77,48 @@ else if (myState != PlayerState.Hold) {
 		if (get_in(in_left, in_check_hold, myID)) {
 			myMove = Face.Left;
 			myFace = Face.Left;
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
 		else if (get_in(in_down_left, in_check_hold, myID)) {
 			myMove = Face.DownLeft;
 			if (myFace == Face.Up || myFace == Face.Right) { myFace = Face.Down; }
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
 		else if (get_in(in_down, in_check_hold, myID)) {
 			myMove = Face.Down;
 			myFace = Face.Down;
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
 		else if (get_in(in_down_right, in_check_hold, myID)) {
 			myMove = Face.DownRight;
 			if (myFace == Face.Up || myFace == Face.Left) { myFace = Face.Down; }
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
 		else if (get_in(in_right, in_check_hold, myID)) {
 			myMove = Face.Right;
 			myFace = Face.Right;
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
 		else if (get_in(in_up_right, in_check_hold, myID)) {
 			myMove = Face.UpRight;
 			if (myFace == Face.Down || myFace == Face.Left) { myFace = Face.Up; }
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
 		else if (get_in(in_up, in_check_hold, myID)) {
 			myMove = Face.Up;
 			myFace = Face.Up;
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
 		else if (get_in(in_up_left, in_check_hold, myID)) {
 			myMove = Face.UpLeft;
 			if (myFace == Face.Down || myFace == Face.Right) { myFace = Face.Up; }
-			myState = PlayerState.Move;
+			myState = ActorState.Move;
 		}
-		else { myState = PlayerState.Idle; }
+		else { myState = ActorState.Idle; }
 	}
 	
 	//Handle motion based on direction & state
-	if (myState == PlayerState.Move) {
+	if (myState == ActorState.Move) {
 		vx = approach(vx, faceOffsetX[myMove]*moveSpeed, moveAcc);
 		vy = approach(vy, faceOffsetY[myMove]*moveSpeed, moveAcc);
 	}
@@ -130,15 +128,15 @@ else if (myState != PlayerState.Hold) {
 	}
 	
 	//Handle animation based on direction & state
-	if (myState == PlayerState.Attack) {
+	if (myState == ActorState.Attack) {
 		sprite_index = attackSprites[myFace];
 		image_speed = attackImageSpeed;
 	}
-	else if (myState == PlayerState.Idle) {
+	else if (myState == ActorState.Idle) {
 		sprite_index = idleSprites[myFace];
 		image_speed = idleImageSpeed;
 	}
-	else if (myState == PlayerState.Move) {
+	else if (myState == ActorState.Move) {
 		sprite_index = moveSprites[myFace];
 		image_speed = walkImageSpeed;
 	}

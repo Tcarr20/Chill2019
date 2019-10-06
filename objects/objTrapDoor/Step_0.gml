@@ -5,3 +5,6 @@ if (image_speed != 0)
 		image_speed = 0;
 	}
 }
+
+//Set if the hole can be fallen down or not
+myDamage = (image_index == (image_number - 1))? 1 : 0;
