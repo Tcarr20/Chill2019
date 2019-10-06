@@ -24,3 +24,17 @@ if (ds_exists(global.textBuffer, ds_type_queue) && !ds_queue_empty(global.textBu
 	//Reset shader
 	shader_reset();
 }
+
+if(room_width)
+{
+    
+    shader_set(shdRoomMask);
+    var roomWidth = shader_get_uniform(shdRoomMask, "roomWidth");
+    var roomHeight = shader_get_uniform(shdRoomMask, "roomHeight");
+	
+    shader_set_uniform_f(roomWidth, room_width);
+    shader_set_uniform_f(roomHeight, room_height);
+
+    shader_reset();
+    
+}

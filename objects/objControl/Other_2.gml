@@ -21,15 +21,15 @@ for(var i=0; i<global.roomGridW; i++) {
 SlideTopRight = scrDefineMapCell(true, rmSlideTopRight, sprMapTileSlideTopRight, [true, true, false, false]);
 SlideBoss = scrDefineMapCell(true, rmBoss, sprMapTileBoss, [false, false, false, true]);
 SlideFourDir = scrDefineMapCell(true, rmSlideFourDir, sprMapTileSlideAllDir, [true, true, true, true]);
-SlideBotRight = scrDefineMapCell(true, rmSlideBotRight, -1, [false, true, true, false]);
+SlideBotRight = scrDefineMapCell(true, rmSlideBotRight, sprMapTileSlideBotRight, [false, true, true, false]);
 SlideBotLeftRight = scrDefineMapCell(true, rmSlideBotLeftRight, sprMapBotLeftRight, [false, true, true, true]);
 SlideBotLeft = scrDefineMapCell(true, rmSlideBotLeft, sprMapTileSlideBotLeft, [false, false, true, true]);
 SlideTopLeftRight = scrDefineMapCell(true, rmTopLeftRight, sprMapTileSlideTopLeftRight, [true, true, false, true]);
 SlideTopBotLeft = scrDefineMapCell(true, rmSlideTopBotLeft, sprMapTileSlideTopBotLeft, [true, false, true, true]);
 
-global.roomGrid[0, 0] = SlideTopRight;	global.roomGrid[1, 0] = SlideTopBotLeft;		global.roomGrid[2, 0] = SlideBoss;
-global.roomGrid[0, 1] = SlideBotRight;		global.roomGrid[1, 1] = SlideBotLeftRight;					global.roomGrid[2, 1] = SlideBotLeft;
-global.roomGrid[0, 2] = -1;	global.roomGrid[1, 2] = SlideFourDir;	global.roomGrid[2, 2] = SlideTopLeftRight;
+global.roomGrid[0, 0] = SlideTopRight;		global.roomGrid[1, 0] = SlideTopBotLeft;				global.roomGrid[2, 0] = SlideBoss;
+global.roomGrid[0, 1] = SlideBotRight;		global.roomGrid[1, 1] = SlideBotLeftRight;				global.roomGrid[2, 1] = SlideBotLeft;
+global.roomGrid[0, 2] = -1;					global.roomGrid[1, 2] = SlideFourDir;					global.roomGrid[2, 2] = SlideTopLeftRight;
 global.roomGridSpace = [0, 2];
 global.roomEnterFrom = Face.Down;
 

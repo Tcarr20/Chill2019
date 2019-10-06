@@ -48,6 +48,14 @@
             }
         },
         {
+            "Key": "014c0a24-fe60-4f5b-8ab0-a9bef6d5cdfb",
+            "Value": {
+                "id": "06503d00-7c31-4d38-99d4-7fea142fe560",
+                "resourcePath": "objects\\objMaskWolf\\objMaskWolf.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "031ba886-9b01-4bd4-88aa-b9ffd572b1fe",
             "Value": {
                 "id": "5b50fac4-e5d1-4e62-a0b1-fad62b4bb52a",
@@ -125,6 +133,14 @@
                 "id": "3e18ce6f-7ce7-4be2-8133-8327c94af9f7",
                 "resourcePath": "scripts\\get_camera_h\\get_camera_h.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "05cc7a44-fac1-4c90-b37a-460dd5fc09b9",
+            "Value": {
+                "id": "282131a9-1041-4940-833a-ac89316e993a",
+                "resourcePath": "objects\\objPressurePlateDoors\\objPressurePlateDoors.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -893,6 +909,14 @@
                 "id": "d369122c-6ff2-44ce-a481-acfa301a2559",
                 "resourcePath": "objects\\objDoorRight\\objDoorRight.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "352a7edc-3a6f-4f82-bc1e-03a67cf402ca",
+            "Value": {
+                "id": "a2a08e82-7ed8-4342-93a0-9c24efdff80d",
+                "resourcePath": "sounds\\Lose\\Lose.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1928,6 +1952,14 @@
             }
         },
         {
+            "Key": "74ff6158-84ad-470d-9ccb-c51953561a83",
+            "Value": {
+                "id": "b227db50-9d41-4dec-a064-08a059bb7918",
+                "resourcePath": "sprites\\sprGameOver\\sprGameOver.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "755482c7-c2b3-4e83-8228-19c3075d1426",
             "Value": {
                 "id": "88f520b6-6385-434d-b3b5-f883731b35c1",
@@ -2149,6 +2181,14 @@
                 "id": "24c8c13e-9104-4251-90d5-8456ff5235c0",
                 "resourcePath": "sprites\\sprWolfMoveU\\sprWolfMoveU.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "82e13df0-96a6-45a7-863c-dc21d80ee4e0",
+            "Value": {
+                "id": "97b5b93c-f774-4262-bb9a-ac795f359986",
+                "resourcePath": "objects\\objGameOver\\objGameOver.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2581,6 +2621,14 @@
                 "id": "a6ae6a12-d1bb-4b94-91d9-76aaabeabca2",
                 "resourcePath": "sprites\\sprPlayerMask\\sprPlayerMask.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a25ae908-883e-4d99-9c14-7652012c0661",
+            "Value": {
+                "id": "98692d55-577b-4631-a987-4d7862f6f83b",
+                "resourcePath": "rooms\\rmGameOver\\rmGameOver.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -3568,6 +3616,14 @@
             }
         },
         {
+            "Key": "e1fc79aa-4b30-4fb3-be8f-5da987191a32",
+            "Value": {
+                "id": "f21894d7-24cf-44c2-8ddb-9df8aa849fbd",
+                "resourcePath": "shaders\\shdRoomMask\\shdRoomMask.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "e21d0ac5-a6cb-43cc-a0e3-6be008aa8473",
             "Value": {
                 "id": "7151afcb-9a9f-4b34-87fc-d97f90bc2499",
@@ -3736,6 +3792,14 @@
             }
         },
         {
+            "Key": "e98f6295-33b7-4083-81fb-f05d82574c49",
+            "Value": {
+                "id": "94cbe36f-4eee-40c1-ad02-b3061778e99f",
+                "resourcePath": "objects\\objMaskJack\\objMaskJack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e9dd9c69-be8f-4352-aa41-46017760705a",
             "Value": {
                 "id": "2955a8ed-0a43-453d-8d7b-885a91bc9f39",
@@ -3848,6 +3912,14 @@
             }
         },
         {
+            "Key": "f31dd744-7802-4ca2-b3e6-3ed918c45f02",
+            "Value": {
+                "id": "fa30bafd-df68-48fa-9131-756726436992",
+                "resourcePath": "sounds\\Win\\Win.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f3a96b54-50e2-4dda-bb30-6cdcd5c156c5",
             "Value": {
                 "id": "cc2cf10b-95c7-498b-aad8-e6f70ebff16a",
@@ -3941,6 +4013,14 @@
                 "id": "74d069dd-36a3-465d-86ec-19252aa1c521",
                 "resourcePath": "scripts\\opmenu_set_variable\\opmenu_set_variable.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f9053168-b06b-42cd-8aca-076a0b029be1",
+            "Value": {
+                "id": "995d5123-f94d-4060-839c-3b831c7e0dcb",
+                "resourcePath": "objects\\objMaskVamp\\objMaskVamp.yy",
+                "resourceType": "GMObject"
             }
         },
         {

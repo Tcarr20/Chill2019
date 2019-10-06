@@ -1,5 +1,5 @@
 /// @description Draw fullscreen effect
-if (type==rm_trans_mosaic) {
+if (type==rm_trans_fade) {
 	shader_set(shdMosaic);
 	shader_set_uniform_f(u_mosaic_size, mosaicSize);
 	shader_set_uniform_f(u_texture_w, surface_get_width(application_surface));

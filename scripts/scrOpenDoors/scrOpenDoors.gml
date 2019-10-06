@@ -4,16 +4,18 @@ var _thisX = -1, _thisY = -1;
 for(var i=0; i<global.roomGridW; i++) {
 	for(var j=0; j<global.roomGridH; j++) {
 		var _map = global.roomGrid[i, j];
-		if (_map[? "room"] == room) {
-			_thisX = i;
-			_thisY = j;
-			break;
+		if (ds_exists(_map, ds_type_map)) {
+			if (_map[? "room"] == room) {
+				_thisX = i;
+				_thisY = j;
+				break;
+			}
 		}
 	}
 }
 
 //Front door
-if (instance_exists(objDoorFront)) {
+if (instance_exists(objDoorFront) && _thisY != (global.roomGridH-1)) {
 	var _d = instance_find(objDoorFront, 0);
 	//If the door is closed
 	if (_d.image_index == 0) {
@@ -29,8 +31,8 @@ if (instance_exists(objDoorFront)) {
 }
 
 //Back door
-if (instance_exists(objDoorFront)) {
-	var _d = instance_find(objDoorFront, 0);
+if (instance_exists(objDoorBack) && _thisY != 0) {
+	var _d = instance_find(objDoorBack, 0);
 	//If the door is closed
 	if (_d.image_index == 0) {
 		//See if the room below has a north opening
@@ -45,8 +47,8 @@ if (instance_exists(objDoorFront)) {
 }
 
 //Left door
-if (instance_exists(objDoorFront)) {
-	var _d = instance_find(objDoorFront, 0);
+if (instance_exists(objDoorLeft) && _thisX != 0) {
+	var _d = instance_find(objDoorLeft, 0);
 	//If the door is closed
 	if (_d.image_index == 0) {
 		//See if the room below has a north opening
@@ -61,8 +63,8 @@ if (instance_exists(objDoorFront)) {
 }
 
 //Right door
-if (instance_exists(objDoorFront)) {
-	var _d = instance_find(objDoorFront, 0);
+if (instance_exists(objDoorRight) && _thisX != (global.roomGridW-1)) {
+	var _d = instance_find(objDoorRight, 0);
 	//If the door is closed
 	if (_d.image_index == 0) {
 		//See if the room below has a north opening

@@ -8,7 +8,7 @@ image_blend=c_black;
 global.stopFlagTrans = true;
 
 //Set up effects
-if (type==rm_trans_mosaic) {
+if (type==rm_trans_fade) {
 	//Disable automatic app surface drawing
 	application_surface_draw_enable(false);
 	mosaicSize = 1;
