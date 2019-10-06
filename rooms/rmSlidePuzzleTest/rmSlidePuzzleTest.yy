@@ -2,7 +2,7 @@
 {
     "name": "rmSlidePuzzleTest",
     "id": "12c7e40a-d356-4731-ad98-0e0f3b1f7831",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
