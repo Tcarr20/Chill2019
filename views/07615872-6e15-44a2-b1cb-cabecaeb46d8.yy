@@ -9,7 +9,9 @@
         "051f7918-0eaf-4b50-9761-b9b60d284181",
         "10e9a0e5-19bc-41a5-a8df-8afd3a0d2c50",
         "76be5185-d501-4ec5-bae3-2b6e11827b00",
-        "ca8188a5-9a18-4400-a1d8-870c2f3b6516"
+        "ca8188a5-9a18-4400-a1d8-870c2f3b6516",
+        "68c2eeb8-7caa-4007-8675-b8bfc624e328",
+        "f4b896d0-345a-4e54-a7e0-b932da12ee43"
     ],
     "filterType": "GMSprite",
     "folderName": "Orange",

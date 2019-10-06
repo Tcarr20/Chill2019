@@ -1,4 +1,5 @@
 ///@description 
+event_inherited();
 myPar = ct_argument[0];
 myFace = ct_argument[1];
 image_speed = ct_argument[2];

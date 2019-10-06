@@ -8,8 +8,7 @@ gml_pragma("global", "macros()");
 #macro debug:DEBUG true
 #macro mask_width sprite_get_width(mask_index)
 #macro mask_height sprite_get_width(mask_index)
-#macro NUM_PLAYERS 1
-#macro RT2 1.4142
+#macro NUM_PLAYERS 2
 #macro INV_RT2 0.7071
 
 #macro NUM_TIMELINES 4
@@ -99,9 +98,9 @@ enum Face {
 	Right, UpRight, Up, UpLeft, Left, DownLeft, Down, DownRight,
 	Total
 };
-enum PlayerState {
+enum ActorState {
 	None, 
-	Idle, Hold, Move, Hurt, Fall, Attack,
+	Idle, Hold, Move, Hurt, Fall, Attack, Attack2, Seek,
 	Total
 };
 enum PlayerClass {

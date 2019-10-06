@@ -25,4 +25,7 @@ if(!audio_is_playing(Kneels_Boar))
 }
 
 //Create players
-instance_create_v((room_width/2), (room_height/2), "InstanceDepthStart", objPlayer, 0, PlayerClass.Wolf);
+if (layer_exists("InstanceDepthStart")) {
+	instance_create_v((room_width/2), (room_height/2), "InstanceDepthStart", objPlayer, 0, PlayerClass.Wolf);
+	instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 1, PlayerClass.Jack);
+}
