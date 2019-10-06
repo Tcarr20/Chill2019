@@ -2,6 +2,14 @@
 //////Game setup
 global.stopFlagText = false;
 global.stopFlagMenu = false;
+global.stopFlagTrans = false;
+
+global.playerOneClass = PlayerClass.None;
+global.playerTwoClass = PlayerClass.None;
+global.playerThreeClass = PlayerClass.None;
+global.playerOneHealth = -1;
+global.playerTwoHealth = -1;
+global.playerThreeHealth = -1;
 
 global.roomGridW = 3;
 global.roomGridH = 3;
@@ -23,6 +31,7 @@ global.roomGrid[0, 0] = SlidePuzzleTest;	global.roomGrid[1, 0] = SlideBotRight;	
 global.roomGrid[0, 1] = SlideFourDir;		global.roomGrid[1, 1] = -1;					global.roomGrid[2, 1] = SlideBotLeftRight;
 global.roomGrid[0, 2] = SlidePlaceholder1;	global.roomGrid[1, 2] = SlidePlaceholder2;	global.roomGrid[2, 2] = SlidePlaceholder3;
 global.roomGridSpace = [1, 1];
+global.roomEnterFrom = Face.Down;
 
 //////Control setup
 //Define controller state arrays
@@ -73,9 +82,9 @@ global.depthGrid = 0;
 
 //////Camera Setup
 //Resolution setup
-ideal_w=768;
+ideal_w=0;
 ideal_h=768;
-/*
+
 screen_w=display_get_width();
 screen_h=display_get_height();
 //Get screen ratio
@@ -93,10 +102,11 @@ if(screen_h mod ideal_h !=0) {
 }
 //Check for odd values
 if(ideal_w & 1) {ideal_w++;}
-if(ideal_h & 1) {ideal_h++;}*/
+if(ideal_h & 1) {ideal_h++;}
 //Set window sizes
 surface_resize(application_surface, ideal_w, ideal_h);
 display_set_gui_size(ideal_w, ideal_h);
 window_set_size(ideal_w, ideal_h);
+window_set_fullscreen(true);
 //Center window
 alarm[0]=1;

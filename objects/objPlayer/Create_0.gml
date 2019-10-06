@@ -8,7 +8,11 @@ myState = ActorState.Idle;
 myClass = ct_argument[1];
 
 //Health & Damage
-myHealth = 6;
+	 if (myClass == PlayerClass.None) { maxHealth = 2; }
+else if (myClass == PlayerClass.Jack) { maxHealth = 6; }
+else if (myClass == PlayerClass.Vamp) { maxHealth = 2; }
+else if (myClass == PlayerClass.Wolf) { maxHealth = 4; }
+myHealth = (ct_argument[2] < 0)? maxHealth : ct_argument[2];
 attackComboLevel = 0;
 attackBuffer = ds_queue_create();
 attackBufferSize = 3;

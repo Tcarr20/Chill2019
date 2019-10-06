@@ -10,7 +10,8 @@
         "6efc1f15-12e3-4a1c-8e92-61964a1c3d9b",
         "ddec8cb9-892c-4100-a135-adc399415c3d",
         "a9a6ecd1-8eba-49bd-b435-341c0a7614a0",
-        "dcc53f48-85fb-4b1e-9571-63bbe232e511"
+        "dcc53f48-85fb-4b1e-9571-63bbe232e511",
+        "8e15a880-24c6-4ea0-aea3-5344cc287428"
     ],
     "filterType": "GMObject",
     "folderName": "Actors",

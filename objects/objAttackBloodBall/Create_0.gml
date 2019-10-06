@@ -4,6 +4,7 @@ lifetime = 45;
 moveFric = 0.3;
 myPar = ct_argument[0];
 myFace = ct_argument[1];
+audio_play_sound(Vamp_Shoot, 1, false);
 switch(myFace) {
 	case Face.Left: 
 		hspeed = -7; 

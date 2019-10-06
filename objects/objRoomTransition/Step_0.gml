@@ -16,7 +16,7 @@ else
     //Fade
 	if (image_alpha>0) {image_alpha -= fade_timer;}
     else {
-        global.stopFlagTransition = false;
+        global.stopFlagTrans = false;
         instance_destroy();
     }
 }
