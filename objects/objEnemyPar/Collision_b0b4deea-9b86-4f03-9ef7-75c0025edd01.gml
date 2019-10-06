@@ -1,6 +1,6 @@
-///@description Player damage
+///@description Spikes damage
 if (scrStop()) { exit; }
-if (other.myDamage > 0 && hitStun == 0) {
+if (other.active && hitStun == 0) {
 	myState = ActorState.Hurt;
 	takeDamage = other.myDamage;
 	takeKnockback = other.myKnockback;

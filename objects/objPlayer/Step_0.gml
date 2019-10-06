@@ -1,5 +1,6 @@
 ///@description Movement & Collision
 event_inherited();
+if (moveSlow > 0) { moveSlow--; }
 if (attackDelay > 0) { attackDelay--; }
 if (hitStun > 0) { hitStun--; }
 if (myState == ActorState.Hurt) {
@@ -20,6 +21,22 @@ else if (myState == ActorState.Fall) {
 			myState = ActorState.Idle;
 			hitStun = hitStunTime; 
 		}
+	}
+}
+else if (myState == ActorState.Attack2) {
+	if (attackDelay == 0) { 
+		myState = ActorState.Idle; 
+		attackComboLevel = 0;
+		instance_destroy(attackInstance);
+	}
+	//Control dash behavior
+	if (myClass == PlayerClass.Jack) {
+		vx = faceOffsetX[myFace]*moveSpeed*1.5;
+		vy = faceOffsetY[myFace]*moveSpeed*1.5;
+	}
+	else {
+		vx = approach(vx, 0, moveFric);
+		vy = approach(vy, 0, moveFric);
 	}
 }
 else if (myState != ActorState.Hold) {
@@ -74,6 +91,48 @@ else if (myState != ActorState.Hold) {
 			}
 		}
 	}
+	if (get_in(in_a, in_check_press, myID) && attackDelay == 0) {
+		//Mad Dash
+		if (myClass == PlayerClass.Jack) {
+			//Execute attack if you're not attacking
+			attackComboLevel = 1;
+			myState = ActorState.Attack2;
+			attackDelay = 40;
+			sprite_index = bashSprites[myFace];
+			image_speed = attackImageSpeed;
+			image_index = 0;
+			attackInstance = instance_create_v(x, y, layer, objAttackBash, self, myFace, attackImageSpeed);
+			audio_play_sound(Jack_Special, 1, false);
+		}
+		//Blood Bath
+		else if (myClass == PlayerClass.Vamp) {
+			//Execute attack if you're not attacking
+			if (attackComboLevel == 0 && !instance_exists(attackInstance)) {
+				attackComboLevel = 1;
+				myState = ActorState.Attack2;
+				attackDelay = 60;
+				sprite_index = attackSprites[myFace];
+				image_speed = attackImageSpeed;
+				image_index = 0;
+				attackInstance = instance_create_v(x, y, layer, objAttackBloodBath, self, myFace, attackImageSpeed);
+				audio_play_sound(Vamp_Special, 1, false);
+			}
+		}
+		//Howl
+		else if (myClass == PlayerClass.Wolf) {
+			//Execute attack if you're not attacking
+			if (attackComboLevel == 0) {
+				attackComboLevel = 1;
+				myState = ActorState.Attack2;
+				attackDelay = 60;
+				sprite_index = attackSprites[myFace];
+				image_speed = attackImageSpeed;
+				image_index = 0;
+				attackInstance = instance_create_v(x, y, layer, objAttackHowl, self, myFace, attackImageSpeed);
+				audio_play_sound(Wolf_Special, 1, false);
+			}
+		}
+	}
 	
 	//Poll movement input
 	if (attackComboLevel == 0)
@@ -123,8 +182,14 @@ else if (myState != ActorState.Hold) {
 	
 	//Handle motion based on direction & state
 	if (myState == ActorState.Move) {
-		vx = approach(vx, faceOffsetX[myMove]*moveSpeed, moveAcc);
-		vy = approach(vy, faceOffsetY[myMove]*moveSpeed, moveAcc);
+		if (moveSlow == 0) {
+			vx = approach(vx, faceOffsetX[myMove]*moveSpeed, moveAcc);
+			vy = approach(vy, faceOffsetY[myMove]*moveSpeed, moveAcc);
+		}
+		else {
+			vx = approach(vx, faceOffsetX[myMove]*moveSpeed*0.5, moveAcc);
+			vy = approach(vy, faceOffsetY[myMove]*moveSpeed*0.5, moveAcc);
+		}
 	}
 	else {
 		vx = approach(vx, 0, moveFric);

@@ -1,4 +1,13 @@
 ///@description State Machine
+if (scareTimer > 0) {
+	scareTimer--;
+	if (scareTimer == 0 && myState == ActorState.Scared) { 
+		myState = ActorState.Idle; 
+		wander = false;
+		myTargetPos = [x, y];
+	}
+}
+
 //Update facing
 	 if (moveDir < 30 || moveDir > 330) { myFace = Face.Right; }
 else if (moveDir > 60 && moveDir < 120) { myFace = Face.Up; }
@@ -15,7 +24,7 @@ if (hitStun > 0) {
 	}
 }
 
-if (myState == ActorState.Idle) {
+if (myState == ActorState.Idle || myState == ActorState.Scared) {
 	//Update sprite
 	if (wander) {
 		switch(myFace) {
@@ -39,7 +48,8 @@ if (myState == ActorState.Idle) {
 	//Wander about aimlessly
 	if (wander) {
 		//Move to goal
-		if (mp_potential_step_object(myTargetPos[X], myTargetPos[Y], moveSpeed, objSolid)) {
+		var _spd = (myState == ActorState.Scared)? moveSpeed*2 : moveSpeed;
+		if (mp_potential_step_object(myTargetPos[X], myTargetPos[Y], _spd, objSolid)) {
 			//Chance to barf
 			var z=irandom(100);
 			if (z < 33) { 

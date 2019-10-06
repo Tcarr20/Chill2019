@@ -25,9 +25,9 @@ switch(room) {
 	break;
 	default:
 		if (layer_exists("InstanceDepthStart")) {
-			instance_create_v((room_width/2), (room_height/2), "InstanceDepthStart", objPlayer, 0, global.playerOneClass, global.playerOneHealth);
-			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 1, global.playerTwoClass, global.playerTwoHealth);
-			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 2, global.playerThreeClass, global.playerThreeHealth);
+			instance_create_v((room_width/2), (room_height/2), "InstanceDepthStart", objPlayer, 0, PlayerClass.Vamp, global.playerOneHealth);
+			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 1, PlayerClass.Jack, global.playerTwoHealth);
+			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 2, PlayerClass.Wolf, global.playerThreeHealth);
 		}
 	break;
 }

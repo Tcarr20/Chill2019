@@ -1,4 +1,6 @@
 ///@description 
+myDamage = 1;
+myKnockback = 0.3;
 event_inherited();
 myPar = ct_argument[0];
 myFace = ct_argument[1];

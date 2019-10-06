@@ -1,4 +1,6 @@
 ///@description Damage reaction
+if (myClass == PlayerClass.Vamp && myState == ActorState.Attack2) { exit; }
+
 if (attackInstance != noone) { instance_destroy(attackInstance); }
 attackComboLevel = 0;
 myHealth -= takeDamage;

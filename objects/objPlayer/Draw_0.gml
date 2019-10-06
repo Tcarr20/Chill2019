@@ -1,9 +1,21 @@
 ///@description Draw self
 //Draw shadow
-if (myState != ActorState.Fall) { draw_sprite_ext(mask_index, 0, x, y, image_xscale, image_yscale, 0, c_white, 0.5); }
+if (!(myClass == PlayerClass.Vamp && myState == ActorState.Attack2) && myState != ActorState.Fall) { 
+	draw_sprite_ext(mask_index, 0, x, y, image_xscale, image_yscale, 0, c_white, 0.5); 
+}
+
 //Draw body
-image_alpha = (hitStun > 0)? 0.5 : 1;
+/*
+if (myClass == PlayerClass.Vamp && myState == ActorState.Attack2) {
+	draw_set_color(c_red);
+	shader_set_uniform_f(u_fPixelW, texelW);	
+	shader_set_uniform_f(u_fPixelH, texelH);	
+	shader_set(shdOutline);
+}*/
+image_alpha = (hitStun > 0)? 0.5 : 1
+image_blend = (moveSlow > 0)? c_yellow : c_white;
 draw_self();
+
 //Draw head
 var _spr = undefined;
 if (myClass == PlayerClass.Jack) {
@@ -41,9 +53,17 @@ if (myClass == PlayerClass.Jack) {
 			}
 		}
 	}
+	else if (myState == ActorState.Attack2) {
+		switch(myFace) {
+			case Face.Left: _spr = sprJackBashL; break;
+			case Face.Right: _spr = sprJackBashR; break;
+			case Face.Up: _spr = sprJackBashU; break;
+			case Face.Down: _spr = sprJackBashD; break;
+		}
+	}
 }
 else if (myClass == PlayerClass.Vamp) {
-	if (myState == ActorState.Idle || myState == ActorState.Hurt || myState == ActorState.Fall) {
+	if (myState == ActorState.Idle || myState == ActorState.Hurt || myState == ActorState.Fall || myState == ActorState.Attack2) {
 		switch(myFace) {
 			case Face.Left: _spr = sprVampIdleL; break;
 			case Face.Right: _spr = sprVampIdleR; break;
@@ -111,7 +131,15 @@ else if (myClass == PlayerClass.Wolf) {
 			}
 		}
 	}
+	else if (myState == ActorState.Attack2) {
+		_spr = sprWolfHowl;
+	}
 }
 if (_spr != undefined) {
 	draw_sprite_ext(_spr, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
+/*
+if (myClass == PlayerClass.Vamp && myState == ActorState.Attack2) {
+	draw_set_color(c_white);
+	shader_reset();
+}*/

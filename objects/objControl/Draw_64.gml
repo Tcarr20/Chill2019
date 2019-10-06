@@ -13,20 +13,6 @@ var _spr_w = sprite_get_width(sprHealthG);
 var _spr_h = sprite_get_height(sprHealthG);
 var _buffer = 16;
 
-/*
-for(i=0; i&lt;global.maxhp; i++) {
-    w = i*sprite_get_width(sprHUDHeartEmpty)%(sprite_get_width(sprHUDHeartEmpty)*global.rowhp);
-    h = sprite_get_height(sprHUDHeartEmpty)*floor(i/global.rowhp);
-    draw_sprite(sprHUDHeartEmpty, 0, hx+104+w, hy+h);
-}
-m = sprite_get_number(sprHUDHeart);
-for(i=0; i&lt;(global.curhp*m); i++) {
-    w = (floor(i/m))*sprite_get_width(sprHUDHeart)%(sprite_get_width(sprHUDHeart)*global.rowhp);
-    h = sprite_get_height(sprHUDHeart)*floor(floor(i/m)/global.rowhp);
-    draw_sprite(sprHUDHeart, i%m, hx+104+w, hy+h);
-}
-*/
-
 //Draw player one health
 for(var i=0; i<player_one.maxHealth; i++) {
 	draw_sprite(sprHealthG, median(0, 1, i+1 - player_one.myHealth), _buffer + (_spr_w * floor(i/2)), _buffer);
@@ -34,7 +20,7 @@ for(var i=0; i<player_one.maxHealth; i++) {
  
 //Draw player two health
 for(var i=0; i<player_two.maxHealth; i++) {
-	draw_sprite(sprHealthO, median(0, 1, i+1 - player_two.myHealth), window_get_width() - _buffer - (_spr_w*3) + (_spr_w * floor(i/2)), _buffer);
+	draw_sprite(sprHealthO, median(0, 1, i+1 - player_two.myHealth), window_get_width() - _buffer - (_spr_w*(player_two.maxHealth/2)) + (_spr_w * floor(i/2)), _buffer);
 }
 
 //Draw player three health

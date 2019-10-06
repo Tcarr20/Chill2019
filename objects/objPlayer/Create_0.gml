@@ -7,6 +7,12 @@ myFace = Face.Down;
 myState = ActorState.Idle;
 myClass = ct_argument[1];
 
+//Shader setup
+//u_fPixelW = shader_get_uniform(shdOutline, "u_fpixelW");
+//u_fPixelH = shader_get_uniform(shdOutline, "u_fPixelH");
+//texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
+//texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
+
 //Health & Damage
 	 if (myClass == PlayerClass.None) { maxHealth = 2; }
 else if (myClass == PlayerClass.Jack) { maxHealth = 6; }
@@ -29,6 +35,7 @@ knockbackDirection = 0;
 alarm[0] = attackBufferCycle;
 
 //Motion control
+moveSlow = 0;
 moveSpeed = 4;
 moveAcc = 0.5;
 moveFric = 0.8;
@@ -68,5 +75,5 @@ if (myID == 2) {
 }
 idleImageSpeed = 0.4;
 walkImageSpeed = 0.6;
-attackImageSpeed = 1.0;
+attackImageSpeed = 0.9;
 image_speed = idleImageSpeed;
