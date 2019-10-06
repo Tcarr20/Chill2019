@@ -14,7 +14,7 @@
             
         ]
     },
-    "out_columns": 5,
+    "out_columns": 6,
     "out_tilehborder": 0,
     "out_tilevborder": 0,
     "spriteId": "91b9135d-c2e5-48e0-9039-198656ff735d",
@@ -52,7 +52,17 @@
             26,
             27,
             28,
-            29
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
         ],
         "SerialiseFrameCount": 1
     },
@@ -60,7 +70,7 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 30,
+    "tile_count": 40,
     "tileheight": 64,
     "tilehsep": 0,
     "tilevsep": 0,

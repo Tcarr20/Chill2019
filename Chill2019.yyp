@@ -26,7 +26,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -816,6 +816,14 @@
             }
         },
         {
+            "Key": "344e9fcd-e49d-4b48-9cfc-ce9c59c96b48",
+            "Value": {
+                "id": "2a3e18a1-4cfe-46ed-ae1f-7e249f92a9de",
+                "resourcePath": "sprites\\sprJackSlashR\\sprJackSlashR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "349a5f02-ee6c-4b47-943c-e4a496f7fe98",
             "Value": {
                 "id": "1a5e5d26-25ce-4fb2-9f31-82c7ee20a1c6",
@@ -1021,6 +1029,14 @@
                 "id": "10547f85-0e1b-4623-8801-7c106f65b5ae",
                 "resourcePath": "scripts\\scrDefineMapCell\\scrDefineMapCell.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "438348a2-e4d8-45ff-a54c-68682952a099",
+            "Value": {
+                "id": "3311e1a5-cdb1-4130-bac4-9dbe80394454",
+                "resourcePath": "rooms\\rmTopLeftRight\\rmTopLeftRight.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2016,19 +2032,19 @@
             }
         },
         {
-            "Key": "83fc6ad1-9165-45e2-ac9d-71bc445f78e8",
-            "Value": {
-                "id": "b301599d-6e86-4767-9e82-592ae5b8e4fe",
-                "resourcePath": "sprites\\sprPlayerRBashL\\sprPlayerRBashL.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "83d9c53e-ad60-48b6-8c84-a1e3beec1c61",
             "Value": {
                 "id": "decf18d6-a7d2-40eb-b28f-b260f26b51e3",
                 "resourcePath": "sounds\\Arrow_Shoot\\Arrow_Shoot.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "83fc6ad1-9165-45e2-ac9d-71bc445f78e8",
+            "Value": {
+                "id": "b301599d-6e86-4767-9e82-592ae5b8e4fe",
+                "resourcePath": "sprites\\sprPlayerRBashL\\sprPlayerRBashL.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2085,6 +2101,14 @@
                 "id": "764d1992-559d-4f96-8b73-c7c1351b8ba8",
                 "resourcePath": "scripts\\opmenu_set_option_name\\opmenu_set_option_name.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8939e12f-0474-40e5-a0ca-203515db3d23",
+            "Value": {
+                "id": "a0248f88-ea32-464e-8eae-00523df1ecff",
+                "resourcePath": "rooms\\rmBoss\\rmBoss.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2480,6 +2504,14 @@
             }
         },
         {
+            "Key": "a7e0d3f1-33e0-4bb4-a5cb-8c8fd07b1ed5",
+            "Value": {
+                "id": "3b068654-0096-4d73-9be2-1706a140cf33",
+                "resourcePath": "rooms\\rmSlideTopBotLeft\\rmSlideTopBotLeft.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "403c6e05-85d7-40ec-b552-2069c22f5941",
@@ -2736,19 +2768,19 @@
             }
         },
         {
-            "Key": "bd2b3f6f-f857-46d1-9903-5ff12b9882ac",
-            "Value": {
-                "id": "b8f47f9e-d50d-4047-aaed-f9c16f8a2750",
-                "resourcePath": "sounds\\Press_Plate\\Press_Plate.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "bd2089eb-d762-4a77-a7d7-8befc549cbbb",
             "Value": {
                 "id": "14449ec9-0fec-4ffc-bd2e-cfc13e789bf8",
                 "resourcePath": "sprites\\sprTrapSpikesUp\\sprTrapSpikesUp.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bd2b3f6f-f857-46d1-9903-5ff12b9882ac",
+            "Value": {
+                "id": "b8f47f9e-d50d-4047-aaed-f9c16f8a2750",
+                "resourcePath": "sounds\\Press_Plate\\Press_Plate.yy",
+                "resourceType": "GMSound"
             }
         },
         {
