@@ -5,7 +5,7 @@ if (myState != ActorState.Fall) { draw_sprite_ext(mask_index, 0, x, y, image_xsc
 image_alpha = (hitStun > 0)? 0.5 : 1;
 draw_self();
 //Draw head
-var _spr;
+var _spr = undefined;
 if (myClass == PlayerClass.Jack) {
 	if (myState == ActorState.Idle || myState == ActorState.Hurt || myState == ActorState.Fall) {
 		switch(myFace) {
@@ -42,7 +42,7 @@ if (myClass == PlayerClass.Jack) {
 		}
 	}
 }
-if (myClass == PlayerClass.Vamp) {
+else if (myClass == PlayerClass.Vamp) {
 	if (myState == ActorState.Idle || myState == ActorState.Hurt || myState == ActorState.Fall) {
 		switch(myFace) {
 			case Face.Left: _spr = sprVampIdleL; break;
@@ -112,4 +112,6 @@ else if (myClass == PlayerClass.Wolf) {
 		}
 	}
 }
-draw_sprite_ext(_spr, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+if (_spr != undefined) {
+	draw_sprite_ext(_spr, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+}

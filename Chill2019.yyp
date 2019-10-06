@@ -520,14 +520,6 @@
             }
         },
         {
-            "Key": "1e400238-a2e7-4eec-b90c-654e73f164e2",
-            "Value": {
-                "id": "40c6823c-d7a7-4d2a-96b5-dbc2ce0b0d6f",
-                "resourcePath": "objects\\JackHealthUI\\JackHealthUI.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1e435515-c2bd-4130-8ef8-07ec0226219f",
             "Value": {
                 "id": "99f14aec-a9bb-4058-9b80-5b5459630b1d",
@@ -632,6 +624,14 @@
             }
         },
         {
+            "Key": "24948472-d6c6-49b2-813f-312baab2e650",
+            "Value": {
+                "id": "58d4c5ba-242b-4706-b3e3-341fdd20be8d",
+                "resourcePath": "sprites\\sprEyeL\\sprEyeL.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "24aa86b6-b9ab-4a42-ad79-ba22d3e6903a",
             "Value": {
                 "id": "cf679926-945c-4d7d-bccd-871c818249b7",
@@ -645,6 +645,14 @@
                 "id": "d7ee489f-ff7c-47f8-8693-88956ea46b17",
                 "resourcePath": "sprites\\sprPlayerRSlash2D\\sprPlayerRSlash2D.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "25ad77a2-4771-4a43-9eb8-f11a6820c2dd",
+            "Value": {
+                "id": "0e2c2156-9f66-41ec-ab58-53eb3f89ff16",
+                "resourcePath": "views\\25ad77a2-4771-4a43-9eb8-f11a6820c2dd.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -939,7 +947,7 @@
             "Key": "3bb19d1d-c9ec-40b9-9d6e-8f3f0c808aa2",
             "Value": {
                 "id": "90122260-9846-4395-9f8d-220cfcb0e0b9",
-                "resourcePath": "sprites\\JackHealthBar\\JackHealthBar.yy",
+                "resourcePath": "sprites\\sprHealthO\\sprHealthO.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1068,6 +1076,14 @@
             "Value": {
                 "id": "5225af20-fe18-47ca-87ab-232aff52b7d4",
                 "resourcePath": "sprites\\sprArrowTowerUD\\sprArrowTowerUD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "48915e34-39bf-4b72-8e3c-71b7d997bd25",
+            "Value": {
+                "id": "d059ba5a-e6ea-481f-8e32-70a4d18a3cce",
+                "resourcePath": "sprites\\sprStucker\\sprStucker.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1720,6 +1736,14 @@
             }
         },
         {
+            "Key": "7002ff77-8b8e-4292-baa7-f8e0d6e2c545",
+            "Value": {
+                "id": "0061e7a2-8d8f-4add-972a-a80c91cb571c",
+                "resourcePath": "sprites\\sprEyeR\\sprEyeR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "70dba261-3219-4337-a221-9e04893e40fa",
             "Value": {
                 "id": "2ccedef3-8ff6-48fe-9a26-0c3c57e53675",
@@ -2160,6 +2184,14 @@
             }
         },
         {
+            "Key": "8e15a880-24c6-4ea0-aea3-5344cc287428",
+            "Value": {
+                "id": "dff61626-f1ca-4f86-98eb-ff2f6cf1e678",
+                "resourcePath": "objects\\objEyeCandy\\objEyeCandy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8f42195b-97fa-4767-b81a-b52c8d0da1e6",
             "Value": {
                 "id": "3b4c943c-c193-44a0-909a-f1f8943ac392",
@@ -2360,14 +2392,6 @@
             }
         },
         {
-            "Key": "a0bd644f-5ebe-4b88-91cd-c40e550dc108",
-            "Value": {
-                "id": "5ec8e100-70b9-4056-a872-d73059e3af92",
-                "resourcePath": "objects\\VampHealthUI\\VampHealthUI.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a163972a-e75c-412f-b4e2-3dde1f6a0051",
             "Value": {
                 "id": "fdb70c5c-8381-4f55-b972-428740a291e9",
@@ -2379,7 +2403,7 @@
             "Key": "a16c872c-990b-47f5-881f-174f586d884d",
             "Value": {
                 "id": "52b65608-9a05-47bc-849a-f94ffe141015",
-                "resourcePath": "sprites\\WolfHealthBar\\WolfHealthBar.yy",
+                "resourcePath": "sprites\\sprHealthG\\sprHealthG.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2452,6 +2476,14 @@
             "Value": {
                 "id": "ac8a4f80-a34b-4a46-9b29-6a4d69bb4278",
                 "resourcePath": "sprites\\sprJackMoveR\\sprJackMoveR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a482ff8a-071e-4449-8b91-cba2d22a5330",
+            "Value": {
+                "id": "63ab6d68-54ab-463d-9f23-eb6e231bce73",
+                "resourcePath": "sprites\\sprEyeD\\sprEyeD.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2992,14 +3024,6 @@
             }
         },
         {
-            "Key": "c8d14547-aee1-4377-9a24-69b058d08b5f",
-            "Value": {
-                "id": "d086de9b-02de-483e-90b8-1643bc16ac0d",
-                "resourcePath": "objects\\WolfHealthUI\\WolfHealthUI.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c8dbd1a6-189a-448f-8641-8cd88225acd4",
             "Value": {
                 "id": "d0fc21e3-5ba1-49f6-822a-0737d46f48ec",
@@ -3108,6 +3132,14 @@
             "Value": {
                 "id": "bc5372b7-1873-43a7-a842-e39d8f2f675f",
                 "resourcePath": "sprites\\sprCornIdleL\\sprCornIdleL.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d0ea9ffa-6e8b-4029-9a8d-97f908bd0a9e",
+            "Value": {
+                "id": "0437b60c-55f5-4e2c-bab1-554138b356ef",
+                "resourcePath": "sprites\\sprEyeU\\sprEyeU.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3323,7 +3355,7 @@
             "Key": "e19f3473-cb4a-4090-96de-d6204f2f5fdf",
             "Value": {
                 "id": "74fa83f0-0a8d-4066-9ba7-dc8aec5fc2a5",
-                "resourcePath": "sprites\\VampHealthBar\\VampHealthBar.yy",
+                "resourcePath": "sprites\\sprHealthR\\sprHealthR.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3413,14 +3445,6 @@
                 "id": "952059d3-cda4-4b49-ba3e-960e6d38e6c7",
                 "resourcePath": "sprites\\sprPlayerOAttackR\\sprPlayerOAttackR.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e4e41ebd-fed8-47a6-ae3e-ffa12eb247aa",
-            "Value": {
-                "id": "e5462e60-1965-43f1-adb9-9799414ecc11",
-                "resourcePath": "views\\e4e41ebd-fed8-47a6-ae3e-ffa12eb247aa.yy",
-                "resourceType": "GMFolder"
             }
         },
         {

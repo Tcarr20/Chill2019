@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "objDoorLeft",
     "eventList": [
-        
+        {
+            "id": "92fb81e3-27dc-46b6-ab4a-35afe80e2e8b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "ddec8cb9-892c-4100-a135-adc399415c3d",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "19693f32-710b-427b-9cd7-d21ffae6b97f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

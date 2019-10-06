@@ -5,7 +5,7 @@ room_start=false;
 fade_timer = 0.1;
 image_alpha=0;
 image_blend=c_black;
-global.stopFlagTransition = true;
+global.stopFlagTrans = true;
 
 //Set up effects
 if (type==rm_trans_mosaic) {
