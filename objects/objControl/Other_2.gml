@@ -27,8 +27,8 @@ SlidePlaceholder1 = scrDefineMapCell(true, -1, -1, [false, false, false, false])
 SlidePlaceholder2 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
 SlidePlaceholder3 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
 
-global.roomGrid[0, 0] = SlidePuzzleTest;	global.roomGrid[1, 0] = SlidePlaceholder4;		global.roomGrid[2, 0] = SlideTopRight;
-global.roomGrid[0, 1] = SlidePlaceholder5;		global.roomGrid[1, 1] = -1;					global.roomGrid[2, 1] = SlidePlaceholder6;
+global.roomGrid[0, 0] = SlidePuzzleTest;	global.roomGrid[1, 0] = SlidePlaceholder4;	global.roomGrid[2, 0] = SlideTopRight;
+global.roomGrid[0, 1] = SlidePlaceholder5;	global.roomGrid[1, 1] = -1;					global.roomGrid[2, 1] = SlidePlaceholder6;
 global.roomGrid[0, 2] = SlidePlaceholder1;	global.roomGrid[1, 2] = SlidePlaceholder2;	global.roomGrid[2, 2] = SlidePlaceholder3;
 global.roomGridSpace = [1, 1];
 global.roomEnterFrom = Face.Down;
@@ -43,7 +43,7 @@ for(var i=0; i<NUM_PLAYERS; i++) {
 }
 //Get controller device states
 var _player = 0;
-for(var i=gamepad_get_device_count()-1; i>=0; i--) {
+for(var i=0; i<gamepad_get_device_count(); i++) {
 	//If a gamepad is connected in slot i...
     if (gamepad_is_supported() && gamepad_is_connected(i)) {
 		global.gp_slot[_player] = i;	//Save gamepad device number
@@ -107,6 +107,6 @@ if(ideal_h & 1) {ideal_h++;}
 surface_resize(application_surface, ideal_w, ideal_h);
 display_set_gui_size(ideal_w, ideal_h);
 window_set_size(ideal_w, ideal_h);
-//window_set_fullscreen(true);
+window_set_fullscreen(true);
 //Center window
 alarm[0]=1;

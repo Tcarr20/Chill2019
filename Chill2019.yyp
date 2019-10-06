@@ -26,7 +26,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -213,6 +213,14 @@
                 "id": "52058b98-bcce-4e7f-a681-e88c84eb2cfa",
                 "resourcePath": "sprites\\sprPlayerRMoveL\\sprPlayerRMoveL.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0bb9d6a0-ff5d-4770-93d2-1aaec87f974c",
+            "Value": {
+                "id": "a3a3acd7-cfab-4300-a3be-644ac3efb5ee",
+                "resourcePath": "scripts\\gamepad_is_taken\\gamepad_is_taken.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -420,6 +428,14 @@
             "Value": {
                 "id": "7ee12461-b970-4e42-bd37-e802ebfe3eb6",
                 "resourcePath": "sprites\\sprPlayerOSlashU\\sprPlayerOSlashU.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "16853582-66d0-4ccb-984e-c532f03ba566",
+            "Value": {
+                "id": "db89ef21-597b-430f-916f-a7c025070daa",
+                "resourcePath": "sprites\\sprTile\\sprTile.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4183,7 +4199,8 @@
         "9e87d544-6fd0-4b85-866b-2bec463d6752",
         "436507aa-3043-4f90-8978-d46dcdb5c9d4",
         "67bfed31-bc40-4850-ba35-5b418612c2b1",
-        "7711b30f-041c-4c06-9d6e-a41860e0216a"
+        "7711b30f-041c-4c06-9d6e-a41860e0216a",
+        "0bb9d6a0-ff5d-4770-93d2-1aaec87f974c"
     ],
     "tutorial": ""
 }

@@ -1,0 +1,1 @@
+return (global.gp_slot[0] == argument0 || global.gp_slot[1] == argument0 || global.gp_slot[2] == argument0)

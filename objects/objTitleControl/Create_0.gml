@@ -1,5 +1,12 @@
-/// @description Insert description here
-// You can write your code in this editor
+///@description Initialize
+//Set state
+myState = 0;
+cursorPos = 0;
+playerOneReady = 0;
+playerTwoReady = 0;
+playerThreeReady = 0;
+
+//Play music
 if(!audio_is_playing(Operatte_del_Corn))
 {
 	audio_stop_all();

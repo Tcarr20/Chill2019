@@ -88,9 +88,9 @@ switch(room) {
 	case rmSlideTopRight:
 		if(global.roomEnterFrom == Face.Up)
 		{
-			instance_create_v(384, 32, "InstanceDepthStart", objPlayer, 0, global.playerOneClass, global.playerOneHealth, Face.Down);
-			instance_create_v(416, 32, "InstanceDepthStart", objPlayer, 1, global.playerTwoClass, global.playerTwoHealth, Face.Down);
-			instance_create_v(448, 32, "InstanceDepthStart", objPlayer, 2, global.playerThreeClass, global.playerThreeHealth, Face.Down);
+			instance_create_v(384, 96, "InstanceDepthStart", objPlayer, 0, global.playerOneClass, global.playerOneHealth, Face.Down);
+			instance_create_v(416, 96, "InstanceDepthStart", objPlayer, 1, global.playerTwoClass, global.playerTwoHealth, Face.Down);
+			instance_create_v(448, 96, "InstanceDepthStart", objPlayer, 2, global.playerThreeClass, global.playerThreeHealth, Face.Down);
 		}
 		else if(global.roomEnterFrom == Face.Right)
 		{
@@ -154,9 +154,9 @@ switch(room) {
 	break;
 	default:
 		if (layer_exists("InstanceDepthStart")) {
-			instance_create_v((room_width/2), (room_height/2), "InstanceDepthStart", objPlayer, 0, PlayerClass.Vamp, global.playerOneHealth);
-			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 1, PlayerClass.Jack, global.playerTwoHealth);
-			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 2, PlayerClass.Wolf, global.playerThreeHealth);
+			instance_create_v((room_width/2), (room_height/2), "InstanceDepthStart", objPlayer, 0, PlayerClass.Vamp, global.playerOneHealth, Face.Down);
+			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 1, PlayerClass.Jack, global.playerTwoHealth, Face.Down);
+			instance_create_v((room_width/2), (room_height/2)+32, "InstanceDepthStart", objPlayer, 2, PlayerClass.Wolf, global.playerThreeHealth, Face.Down);
 		}
 	break;
 }

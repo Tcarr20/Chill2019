@@ -78,8 +78,8 @@ global.gp_last_input = array_create(NUM_PLAYERS, undefined);
 #macro db_chain_final 1
 #macro db_chain_goto 2
 
-#macro font_w 6
-#macro font_h 11
+#macro font_w 12
+#macro font_h 22
 #macro font_sprite sprFont
 
 #macro op_open "{"
