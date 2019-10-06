@@ -26,7 +26,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -520,6 +520,14 @@
             }
         },
         {
+            "Key": "1e400238-a2e7-4eec-b90c-654e73f164e2",
+            "Value": {
+                "id": "40c6823c-d7a7-4d2a-96b5-dbc2ce0b0d6f",
+                "resourcePath": "objects\\JackHealthUI\\JackHealthUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e435515-c2bd-4130-8ef8-07ec0226219f",
             "Value": {
                 "id": "99f14aec-a9bb-4058-9b80-5b5459630b1d",
@@ -816,6 +824,14 @@
             }
         },
         {
+            "Key": "344e9fcd-e49d-4b48-9cfc-ce9c59c96b48",
+            "Value": {
+                "id": "5a59a2d1-eb62-4792-9c1a-d2e2f1ce8f45",
+                "resourcePath": "sprites\\sprJackSlashR\\sprJackSlashR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "349a5f02-ee6c-4b47-943c-e4a496f7fe98",
             "Value": {
                 "id": "1a5e5d26-25ce-4fb2-9f31-82c7ee20a1c6",
@@ -924,6 +940,14 @@
             "Value": {
                 "id": "f38ea389-45de-483d-8762-ee9b2a83e5a2",
                 "resourcePath": "sprites\\sprTrapArrowU\\sprTrapArrowU.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3bb19d1d-c9ec-40b9-9d6e-8f3f0c808aa2",
+            "Value": {
+                "id": "90122260-9846-4395-9f8d-220cfcb0e0b9",
+                "resourcePath": "sprites\\JackHealthBar\\JackHealthBar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1768,14 +1792,6 @@
             }
         },
         {
-            "Key": "74800cf1-225d-4783-a841-dd29cdc4eff6",
-            "Value": {
-                "id": "3c18ecdd-b7de-4024-bb81-f28224f6a44a",
-                "resourcePath": "sounds\\Kneels_Boar\\Kneels_Boar.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "7482507b-fa53-4400-9a15-b36afa25853b",
             "Value": {
                 "id": "91b45577-f101-44b2-b7c1-6b2d9672e69a",
@@ -2016,19 +2032,19 @@
             }
         },
         {
-            "Key": "83fc6ad1-9165-45e2-ac9d-71bc445f78e8",
-            "Value": {
-                "id": "b301599d-6e86-4767-9e82-592ae5b8e4fe",
-                "resourcePath": "sprites\\sprPlayerRBashL\\sprPlayerRBashL.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "83d9c53e-ad60-48b6-8c84-a1e3beec1c61",
             "Value": {
                 "id": "decf18d6-a7d2-40eb-b28f-b260f26b51e3",
                 "resourcePath": "sounds\\Arrow_Shoot\\Arrow_Shoot.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "83fc6ad1-9165-45e2-ac9d-71bc445f78e8",
+            "Value": {
+                "id": "b301599d-6e86-4767-9e82-592ae5b8e4fe",
+                "resourcePath": "sprites\\sprPlayerRBashL\\sprPlayerRBashL.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2296,6 +2312,14 @@
             }
         },
         {
+            "Key": "9d31689e-7b24-45a4-a325-0c230a2331da",
+            "Value": {
+                "id": "31fd67e2-934b-4eef-b9bb-655501b75059",
+                "resourcePath": "sounds\\Kneels_Boar\\Kneels_Boar.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9ddb8b87-b400-4671-8fdc-1cf792a3ddb5",
             "Value": {
                 "id": "fb206731-bbe7-4db7-bf1e-2b087ed887d6",
@@ -2328,11 +2352,27 @@
             }
         },
         {
+            "Key": "a0bd644f-5ebe-4b88-91cd-c40e550dc108",
+            "Value": {
+                "id": "5ec8e100-70b9-4056-a872-d73059e3af92",
+                "resourcePath": "objects\\VampHealthUI\\VampHealthUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a163972a-e75c-412f-b4e2-3dde1f6a0051",
             "Value": {
                 "id": "fdb70c5c-8381-4f55-b972-428740a291e9",
                 "resourcePath": "scripts\\array_end_shift\\array_end_shift.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a16c872c-990b-47f5-881f-174f586d884d",
+            "Value": {
+                "id": "52b65608-9a05-47bc-849a-f94ffe141015",
+                "resourcePath": "sprites\\WolfHealthBar\\WolfHealthBar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2736,19 +2776,19 @@
             }
         },
         {
-            "Key": "bd2b3f6f-f857-46d1-9903-5ff12b9882ac",
-            "Value": {
-                "id": "b8f47f9e-d50d-4047-aaed-f9c16f8a2750",
-                "resourcePath": "sounds\\Press_Plate\\Press_Plate.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "bd2089eb-d762-4a77-a7d7-8befc549cbbb",
             "Value": {
                 "id": "14449ec9-0fec-4ffc-bd2e-cfc13e789bf8",
                 "resourcePath": "sprites\\sprTrapSpikesUp\\sprTrapSpikesUp.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bd2b3f6f-f857-46d1-9903-5ff12b9882ac",
+            "Value": {
+                "id": "b8f47f9e-d50d-4047-aaed-f9c16f8a2750",
+                "resourcePath": "sounds\\Press_Plate\\Press_Plate.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2933,6 +2973,14 @@
                 "id": "ebb0f60a-94a4-4719-8a4a-f53fe328114c",
                 "resourcePath": "views\\c8a2db31-485c-4342-a097-1974082dcce1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c8d14547-aee1-4377-9a24-69b058d08b5f",
+            "Value": {
+                "id": "d086de9b-02de-483e-90b8-1643bc16ac0d",
+                "resourcePath": "objects\\WolfHealthUI\\WolfHealthUI.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3256,6 +3304,14 @@
             }
         },
         {
+            "Key": "e19f3473-cb4a-4090-96de-d6204f2f5fdf",
+            "Value": {
+                "id": "74fa83f0-0a8d-4066-9ba7-dc8aec5fc2a5",
+                "resourcePath": "sprites\\VampHealthBar\\VampHealthBar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e1ae486e-5bf5-4aea-8025-ce41015a2d86",
             "Value": {
                 "id": "8bbc8ad6-18b9-4546-a3e2-8591d90a218f",
@@ -3341,6 +3397,14 @@
                 "id": "952059d3-cda4-4b49-ba3e-960e6d38e6c7",
                 "resourcePath": "sprites\\sprPlayerOAttackR\\sprPlayerOAttackR.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e4e41ebd-fed8-47a6-ae3e-ffa12eb247aa",
+            "Value": {
+                "id": "e5462e60-1965-43f1-adb9-9799414ecc11",
+                "resourcePath": "views\\e4e41ebd-fed8-47a6-ae3e-ffa12eb247aa.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3740,6 +3804,14 @@
             "Value": {
                 "id": "c7bff914-4c9f-4e1d-8e39-dc4650eb307e",
                 "resourcePath": "views\\fec58cb5-8cff-459a-a32e-2f144016142d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ff0f6d77-c3c3-4922-92f6-161ccbdd8f41",
+            "Value": {
+                "id": "598acea5-3d6f-43da-9a44-cd6e0a8a9bd8",
+                "resourcePath": "views\\ff0f6d77-c3c3-4922-92f6-161ccbdd8f41.yy",
                 "resourceType": "GMFolder"
             }
         }

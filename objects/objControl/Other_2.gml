@@ -71,6 +71,11 @@ global.frameTimer = 0;
 global.depthGridH = 0;
 global.depthGrid = 0;
 
+//Health bar set up
+global.jackhealth = 6;
+global.vamphealth = 6;
+global.wolfhealth = 6;
+
 //////Camera Setup
 //Resolution setup
 ideal_w=768;

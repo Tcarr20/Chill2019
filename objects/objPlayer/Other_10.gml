@@ -4,7 +4,22 @@ attackComboLevel = 0;
 myHealth -= takeDamage;
 takeDamage = 0;
 //Death
-if (myHealth <= 0) { event_perform(ev_other, ev_user1); }
+if (myHealth <= 0) { 
+	//Health bars
+	if(myClass == PlayerClass.Jack)
+	{
+		global.jackhealth = 0;
+	}
+	else if(myClass == PlayerClass.Vamp)
+	{
+		global.vamphealth = 0;
+	}
+	else if(myClass == PlayerClass.Wolf)
+	{
+		global.wolfhealth = 0;
+	}
+	
+	event_perform(ev_other, ev_user1); }
 //Knockback
 else {
 	//Set sprite
@@ -23,4 +38,18 @@ else {
 			if (myClass == PlayerClass.Jack) { audio_play_sound(Jack_Hurt, 1, false); }
 	else if (myClass == PlayerClass.Vamp) { audio_play_sound(Vamp_Hurt, 1, false); }
 	else if (myClass == PlayerClass.Wolf) { audio_play_sound(Wolf_Hurt, 1, false); }
+	
+	//Health bars
+	if(myClass == PlayerClass.Jack)
+	{
+		global.jackhealth = myHealth;
+	}
+	else if(myClass == PlayerClass.Vamp)
+	{
+		global.vamphealth = myHealth;
+	}
+	else if(myClass == PlayerClass.Wolf)
+	{
+		global.wolfhealth = myHealth;
+	}
 }

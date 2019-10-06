@@ -45,7 +45,8 @@
         "2b3b9e37-ce8f-43c9-aa44-e8c2d73e6016",
         "be2f82ba-9ec5-4824-a324-14ead886a89e",
         "ceb86158-cd79-4962-9d25-d2dc33b8ca5d",
-        "d3f09231-53b4-49b5-9fdd-1e5223fe3887"
+        "d3f09231-53b4-49b5-9fdd-1e5223fe3887",
+        "d69d55e1-22a5-4b26-8b61-79f623241e19"
     ],
     "IsDnD": false,
     "layers": [
