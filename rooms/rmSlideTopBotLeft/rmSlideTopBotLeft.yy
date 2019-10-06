@@ -2,7 +2,7 @@
 {
     "name": "rmSlideTopBotLeft",
     "id": "a7e0d3f1-33e0-4bb4-a5cb-8c8fd07b1ed5",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

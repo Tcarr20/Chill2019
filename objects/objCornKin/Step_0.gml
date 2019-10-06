@@ -93,6 +93,7 @@ else if (myState == ActorState.Attack2) {
 			case Face.Down: _yy += 32; break;
 		}
 		instance_create_v(_xx, _yy, "InstanceFloor", objCornKinVomit);
+		audio_play_sound(Corn_Vomit, 1, false);
 		myState = ActorState.Idle;
 		wander=false;
 	}
