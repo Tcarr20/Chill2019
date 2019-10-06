@@ -9,5 +9,3 @@ draw_self();
 else if (headMoveSprites[myFace] != -1 && myState == ActorState.Move) { draw_sprite_ext(headMoveSprites[myFace], image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha); }
 else if (headAttackSprites[myFace] != -1 && myState == ActorState.Attack) { draw_sprite_ext(headAttackSprites[myFace], image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha); }
 else if (headHurtSprites[myFace] != -1 && (myState == ActorState.Hurt || myState == ActorState.Fall)) { draw_sprite_ext(headHurtSprites[myFace], image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha); }
-
-draw_text(x, y, attackDelay)
