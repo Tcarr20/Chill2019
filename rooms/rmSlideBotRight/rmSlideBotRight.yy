@@ -2,13 +2,12 @@
 {
     "name": "rmSlideBotRight",
     "id": "9e99c7ab-c7ca-43e8-b22b-d33f77a826ab",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "996e2111-84c0-4636-b82b-4a66a8479055",
-        "d69d55e1-22a5-4b26-8b61-79f623241e19",
         "d07ce4ed-4e80-44f5-8c30-d1a896081eda",
         "f7c0cc14-c34d-43ac-8631-0e614e187a6e",
         "4380a12b-da9f-4112-b9bd-ac592cb09510",
@@ -143,7 +142,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_7C1EC316","id": "d69d55e1-22a5-4b26-8b61-79f623241e19","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "552e9860-5945-4df7-b5fd-39c792afbaeb","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7C1EC316","objId": "ddec8cb9-892c-4100-a135-adc399415c3d","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 384,"y": 384}
+
             ],
             "layers": [
 
@@ -231,8 +230,8 @@
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
             "modelName": "GMRTileLayer",
-            "prev_tileheight": 0,
-            "prev_tilewidth": 0,
+            "prev_tileheight": 64,
+            "prev_tilewidth": 64,
             "mvc": "1.0",
             "tiles": {
                 "SerialiseData": null,
@@ -278,8 +277,8 @@
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
             "modelName": "GMRTileLayer",
-            "prev_tileheight": 0,
-            "prev_tilewidth": 0,
+            "prev_tileheight": 64,
+            "prev_tilewidth": 64,
             "mvc": "1.0",
             "tiles": {
                 "SerialiseData": null,

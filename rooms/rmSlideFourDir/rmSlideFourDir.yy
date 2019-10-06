@@ -2,12 +2,11 @@
 {
     "name": "rmSlideFourDir",
     "id": "7b5f9dc5-2ea2-41f3-8b23-ef58dab005d7",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "2e962ed1-788e-4fe9-a057-935801c0da22",
         "f5018095-35ae-4efa-a681-b31208d1ed06",
         "af28bbc3-605e-49d2-b05d-9f3e307c01c8",
         "7be55b61-0145-4bdc-8ad9-62cf2eadb261",
