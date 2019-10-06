@@ -16,6 +16,7 @@ if (place_meeting(x, y, objActorPar)) {
 }
 else { 
 	if (myLatch) {
+		audio_play_sound(Press_Plate, 0.5, false);
 		for(var i=0; i<instance_number(objTrapParent); i++) {
 			var _o = instance_find(objTrapParent, i);
 			if (variable_instance_exists(_o, "myGroup")) {
@@ -28,3 +29,4 @@ else {
 	myLatch = false;
 	image_index = 0; 
 }
+

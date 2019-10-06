@@ -168,6 +168,14 @@
             }
         },
         {
+            "Key": "09102958-6278-441e-8d80-5c6432fd8f16",
+            "Value": {
+                "id": "5ca9a120-1448-4820-b2c6-171598db3501",
+                "resourcePath": "sounds\\Fall_Out\\Fall_Out.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0a2805ef-c857-45d0-a339-cf26d47fec4c",
             "Value": {
                 "id": "64bb8c17-b0e4-4483-8c9d-15f9614d7c43",
@@ -2893,6 +2901,14 @@
                 "id": "f3c89ca2-8b91-446c-8f07-150bc4ac9faa",
                 "resourcePath": "scripts\\ctl_last_moment\\ctl_last_moment.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c0ac1e44-d884-45b3-be3e-3a5784946a1f",
+            "Value": {
+                "id": "e933ed61-c360-4b56-8e08-0425673e3c54",
+                "resourcePath": "sounds\\Corn_Die\\Corn_Die.yy",
+                "resourceType": "GMSound"
             }
         },
         {

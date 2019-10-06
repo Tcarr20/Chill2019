@@ -9,14 +9,17 @@ if (myHealth <= 0) {
 	if(myClass == PlayerClass.Jack)
 	{
 		global.jackhealth = 0;
+		audio_play_sound(Jack_Die, 1, false);
 	}
 	else if(myClass == PlayerClass.Vamp)
 	{
 		global.vamphealth = 0;
+		audio_play_sound(Vamp_Die, 1, false);
 	}
 	else if(myClass == PlayerClass.Wolf)
 	{
 		global.wolfhealth = 0;
+		audio_play_sound(Wolf_Die, 1, false);
 	}
 	
 	event_perform(ev_other, ev_user1); }

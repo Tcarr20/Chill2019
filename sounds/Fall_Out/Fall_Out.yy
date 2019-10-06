@@ -1,8 +1,8 @@
 {
-    "id": "e32c525b-f428-4b51-87f9-cb81ab9de193",
+    "id": "09102958-6278-441e-8d80-5c6432fd8f16",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "Door_Toggle",
+    "name": "Fall_Out",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.2
+    "volume": 0.75
 }

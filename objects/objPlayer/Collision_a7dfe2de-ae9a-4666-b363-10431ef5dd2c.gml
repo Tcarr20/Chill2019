@@ -25,6 +25,7 @@ if (other.myDamage > 0 && myState != ActorState.Fall) {
 		
 		//Set falling state
 		myState = ActorState.Fall;
+		audio_play_sound(Fall_Out, 1, false);
 	}
 	//Get dragged in pit
 	else {
