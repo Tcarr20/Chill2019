@@ -8,6 +8,7 @@ takeDamage = 0;
 takeKnockback = 0;
 knockbackDirection = 0;
 hitStunTime = 30;
+scareTimer = 0;
 
 wander = false;
 myFace = Face.Down

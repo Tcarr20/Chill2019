@@ -8,12 +8,13 @@ takeDamage = 0;
 takeKnockback = 0;
 knockbackDirection = 0;
 hitStunTime = 30;
+scareTimer = 0;
 
 wander = false;
 myFace = Face.Down
 myTarget = noone;
 myTargetPos = [x, y];
-moveSpeed = 1;
+moveSpeed = 2;
 alarm[0] = irandom_range(15, 60);
 alarm[1] = 1;
 alarm[2] = irandom_range(10, 30);

@@ -20,15 +20,15 @@ for(var i=0; i<global.roomGridW; i++) {
 //Define rooms
 SlideTopRight = scrDefineMapCell(true, rmSlideTopRight, sprMapTileSlideTopRight, [false, false, false, false]);
 SlidePuzzleTest = scrDefineMapCell(true, rmSlidePuzzleTest, -1, [false, false, false, false]);
-SlideBotLeftRight = scrDefineMapCell(true, rmSlideBotLeftRight, -1, [false, false, false, false]);
-SlideBotRight = scrDefineMapCell(true, rmSlideBotRight, -1, [false, false, false, false]);
-SlideFourDir = scrDefineMapCell(true, rmSlideBotRight, -1, [false, false, false, false]);
+SlidePlaceholder4 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
+SlidePlaceholder5 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
+SlidePlaceholder6 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
 SlidePlaceholder1 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
 SlidePlaceholder2 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
 SlidePlaceholder3 = scrDefineMapCell(true, -1, -1, [false, false, false, false]);
 
-global.roomGrid[0, 0] = SlidePuzzleTest;	global.roomGrid[1, 0] = SlideBotRight;		global.roomGrid[2, 0] = SlideTopRight;
-global.roomGrid[0, 1] = SlideFourDir;		global.roomGrid[1, 1] = -1;					global.roomGrid[2, 1] = SlideBotLeftRight;
+global.roomGrid[0, 0] = SlidePuzzleTest;	global.roomGrid[1, 0] = SlidePlaceholder4;		global.roomGrid[2, 0] = SlideTopRight;
+global.roomGrid[0, 1] = SlidePlaceholder5;		global.roomGrid[1, 1] = -1;					global.roomGrid[2, 1] = SlidePlaceholder6;
 global.roomGrid[0, 2] = SlidePlaceholder1;	global.roomGrid[1, 2] = SlidePlaceholder2;	global.roomGrid[2, 2] = SlidePlaceholder3;
 global.roomGridSpace = [1, 1];
 global.roomEnterFrom = Face.Down;
@@ -38,7 +38,7 @@ global.roomEnterFrom = Face.Down;
 for(var i=0; i<NUM_PLAYERS; i++) {
 	global.gp_slot[i] = -1;
 	global.gp_last_input[i] = undefined;
-	global.gp_axis_thresh[i] = 0.15;
+	global.gp_axis_thresh[i] = 0.20;
 	global.gp_trig_thresh[i] = 0.15;
 }
 //Get controller device states
@@ -107,6 +107,6 @@ if(ideal_h & 1) {ideal_h++;}
 surface_resize(application_surface, ideal_w, ideal_h);
 display_set_gui_size(ideal_w, ideal_h);
 window_set_size(ideal_w, ideal_h);
-window_set_fullscreen(true);
+//window_set_fullscreen(true);
 //Center window
 alarm[0]=1;

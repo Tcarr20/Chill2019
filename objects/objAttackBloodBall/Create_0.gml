@@ -1,5 +1,7 @@
 ///@description Initial values
 event_inherited();
+myDamage = 1;
+myKnockback = 0.2;
 lifetime = 45;
 moveFric = 0.3;
 myPar = ct_argument[0];

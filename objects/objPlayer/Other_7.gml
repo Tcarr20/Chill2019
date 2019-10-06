@@ -71,8 +71,8 @@ if (myState == ActorState.Attack)
 					sprite_index = attackSprites[myFace];
 					image_speed = attackImageSpeed;
 					attackInstance = instance_create_v(x, y, layer, objAttackSwipe3, self, myFace, attackImageSpeed);
-					vx += faceOffsetX[myFace]*moveSpeed*1.25;
-					vy += faceOffsetY[myFace]*moveSpeed*1.25;
+					vx += faceOffsetX[myFace]*moveSpeed*2.25;
+					vy += faceOffsetY[myFace]*moveSpeed*2.25;
 				}
 			}
 			else { 
