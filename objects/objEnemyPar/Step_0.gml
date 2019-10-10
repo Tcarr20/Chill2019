@@ -10,7 +10,7 @@ if (myState == ActorState.Fall) {
 		x = respawnPos[X];
 		y = respawnPos[Y];
 		myHealth -= 1;
-		if (myHealth <= 0) { event_perform(ev_other, ev_user1); }
+		if (myHealth <= 0) { instance_destroy(); }
 		else {
 			myState = ActorState.Idle;
 			hitStun = hitStunTime; 

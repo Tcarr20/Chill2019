@@ -27,7 +27,7 @@ if (other.myDamage > 0 && myState != ActorState.Fall) {
 	}
 	//Get dragged in pit
 	else {
-		hspeed += lengthdir_x(-moveAcc, _angle);
-		vspeed += lengthdir_y(-moveAcc, _angle);
+		hspeed += lengthdir_x(-0.5, _angle);
+		vspeed += lengthdir_y(-0.5, _angle);
 	}
 }

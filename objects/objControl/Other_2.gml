@@ -75,6 +75,10 @@ global.upixel_c = shader_get_uniform(shdTextShadow, "pixelC");
 global.texel_w = texture_get_texel_width(sprite_get_texture(font_sprite, 0));
 global.texel_h = texture_get_texel_height(sprite_get_texture(font_sprite, 0));
 global.frameTimer = 0;
+global.textbox_9slice_array = 
+[sprBoxBorderTopLeft, sprBoxBorderTop, sprBoxBorderTopRight,
+ sprBoxBorderMiddleLeft, sprBoxBorderMiddle, sprBoxBorderMiddleRight,
+ sprBoxBorderBottomLeft, sprBoxBorderBottom, sprBoxBorderBottomRight];
 
 //////Depth grid setup
 global.depthGridH = 0;

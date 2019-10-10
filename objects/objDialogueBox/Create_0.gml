@@ -1,13 +1,14 @@
 /// @description Initialize
 cpt_init();
+global.stopFlagText = true;
 myChoices = ct_argument[4];
 myValues = ct_argument[5];
 myPortrait = ct_argument[6];
 myName = ct_argument[7];
 myCallback = ct_argument[8];
 myCallbackArgs = ct_argument[9];
-cols = 40;
-rows = 4;
+cols = 50;
+rows = 5;
 myType = ct_argument[0];
 mySpeed = ct_argument[2];
 myState = 0;
@@ -35,7 +36,7 @@ else {
 	drawH = boxH;
 }
 myPos = [drawW, drawH];
-sizePath = cpt_begin(myPos, cpt_linear, 5, 5, [boxW, boxH]);
+sizePath = cpt_begin(myPos, cpt_linear, 10, 10, [boxW, boxH]);
 scrollPath = -1;
 
 //Bound the box position

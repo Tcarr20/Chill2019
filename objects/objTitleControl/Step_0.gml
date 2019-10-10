@@ -26,9 +26,11 @@ for(var i=0; i<gamepad_get_device_count(); i++) {
 if (myState == 0) {
 	if(get_in(in_a, in_check_press, 0)) {
 		if (cursorPos == 0) { myState = 1; }
+		else if (cursorPos == 1) { db_create(tb_static, -1, -1, "{M=wave}~~~{M=normal}Created by Alex Stenzel, Anthony Carr, Ephraim Jackson, and Cameron Donner. Chillenium 2019, Game Maker Studio 2.{M=wave}~~~{M=normal}") }
+		else { game_end(); }
 	}
-	if (get_in(in_down, in_check_press, 0)) { cursorPos = 1; }
-	if (get_in(in_up, in_check_press, 0)) { cursorPos = 0; }
+	if (get_in(in_down, in_check_press, 0)) { cursorPos = wrap(cursorPos + 1, 0, 2); }
+	if (get_in(in_up, in_check_press, 0)) { cursorPos = wrap(cursorPos - 1, 0, 2); }
 }
 else if (myState == 1) {
 	if (get_in(in_a, in_check_hold, 0)) { playerOneReady = clamp(playerOneReady + 1, 0, 30); }
@@ -39,7 +41,8 @@ else if (myState == 1) {
 	else { playerThreeReady = clamp(playerThreeReady - 1, 0, 30); }
 	
 	if (playerOneReady == 30 && playerTwoReady == 30 && playerThreeReady == 30) {
-		room_goto_effect(rmSlideFourDir, rm_trans_fade);
+		audio_stop_all();
+		room_goto(rmSlideFourDir);
 	}
 	
 	if (get_in(in_b, in_check_press, 0)) { myState = 0; }

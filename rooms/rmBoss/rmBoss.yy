@@ -2,7 +2,7 @@
 {
     "name": "rmBoss",
     "id": "8939e12f-0474-40e5-a0ca-203515db3d23",
-    "creationCodeFile": "RoomCreationCode.gml",
+    "creationCodeFile": "",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

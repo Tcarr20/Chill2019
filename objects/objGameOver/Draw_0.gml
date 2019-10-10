@@ -1,4 +1,5 @@
 ///@description 
+draw_self();
 //Build string
 var _str = "";
 if (cursorPos == 0) { _str += "{C=blue}"; }

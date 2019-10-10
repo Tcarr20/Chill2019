@@ -19,6 +19,6 @@ if (image_index == (image_number - 1)) {
 	if (_thisX != -1 && _thisY != -1) {
 		global.roomEnterFrom = Face.Down;
 		var _up_map = global.roomGrid[_thisX, _thisY-1];
-		if (_up_map != -1) { room_goto_effect(_up_map[? "room"], rm_trans_fade); }
+		if (_up_map != -1) { room_goto(_up_map[? "room"]); }
 	}
 }

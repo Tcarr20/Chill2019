@@ -71,6 +71,10 @@ if (myState == ActorState.Idle || myState == ActorState.Scared) {
 //Seek player
 else if (myState == ActorState.Seek) {
 	wander = true;
+	if (!instance_exists(myTarget)) {
+		myState = ActorState.Idle;
+		exit;
+	}
 	mp_potential_step_object(myTargetPos[X], myTargetPos[Y], moveSpeed, objSolid);
 	var _dist = point_to_point(x, y, myTargetPos[X], myTargetPos[Y]);
 	if (_dist < 48) {

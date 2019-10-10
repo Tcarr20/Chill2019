@@ -56,6 +56,10 @@ if (myState == ActorState.Idle) {
 //Seek player
 else if (myState == ActorState.Seek) {
 	wander = true;
+	if (!instance_exists(myTarget)) {
+		myState = ActorState.Idle;
+		exit;
+	}
 	mp_potential_step_object(myTarget.x, myTarget.y, moveSpeed, objSolid);
 	var _dist = point_to_point(x, y, myTarget.x, myTarget.y);
 	if (_dist < 16) {

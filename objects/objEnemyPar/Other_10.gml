@@ -11,8 +11,8 @@ else {
 	image_speed = 0;
 		
 	//Set motion
-	hspeed = lengthdir_x(2*takeKnockback, knockbackDirection);
-	vspeed = lengthdir_y(2*takeKnockback, knockbackDirection);
+	hspeed = lengthdir_x(3*takeKnockback, knockbackDirection);
+	vspeed = lengthdir_y(3*takeKnockback, knockbackDirection);
 	takeKnockback = 0;
 	knockbackDirection = 0;
 	
